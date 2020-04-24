@@ -1,0 +1,71 @@
+"testing": {
+        "env_online": "internet",
+        "env_internal": "internal",
+        "internal": {
+            "APP": "http://test.app.babamama.cn/",
+            "SHOP": "http://test.shop.babamama.cn/",
+
+            "users_json_file_name1": "users/yyx.json",
+
+            "headers": {
+                "Version-Name": "1.8.1",
+                "Version-Code": "181",
+                "Device-Type": "2"
+            },
+
+
+            "params": {
+                "ptvn": "2",
+                "mcc": "460",
+                "ver": "4.1.60",
+                "vercode": "4.1.60.184",
+                "os": "iOS",
+                "api": "13500000",
+                "model": "iPhone10",
+                "cl": "zh-Hans-JP",
+                "countryCode": "US",
+                "androidid": "testand"
+            },
+            "local_user_info": ["uid", "token", "nickname", "countryCode", "level", "gold"],
+            "checker": 0,
+
+        },
+
+        }
+    },
+    "log": {
+        "version": 1,
+        "formatters": {
+            "brief": {
+                "format": "%(asctime)s [%(levelname)s] [%(filename)s:%(funcName)s:%(lineno)d] %(message)s"
+            },
+            "standard": {
+                "format": "%(asctime)s [%(levelname)s] - [%(filename)s] - %(message)s",
+                "datefmt": "%Y%m%d %H:%M:%S"
+            }
+        },
+        "handlers": {
+            "console": {
+                "class": "logging.StreamHandler",
+                "formatter": "brief",
+                "level": "INFO",
+                "stream": "ext://sys.stdout"
+            },
+            "file": {
+                "class": "logging.FileHandler",
+                "formatter": "standard",
+                "level": "DEBUG",
+                "filename": "run.log",
+                "mode": "w",
+                "encoding": "utf8"
+            }
+        },
+        "root": {
+            "level": "DEBUG",
+            "handlers": ["console", "file"]
+        }
+    },
+    "install_pkg": {
+        "requests":""
+    }
+}
