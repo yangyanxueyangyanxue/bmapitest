@@ -7,7 +7,7 @@ def select_username_by_uid_and_phone(uid, phone):
     # 创建数据库实例, 数据库名等相关信息在 mysql_conf.py 中配置
     db = mysql_db.connect("bbmmapptest")
     # 创建数据表实例, 表为数据库中一张存在的表
-    table_users = db.get_table("users")
+    table_users = db.get_table("bm_member")
     # where 子句
     # 支持符号: <, <=, >, >=, =, !=
     # 默认为 and 连接

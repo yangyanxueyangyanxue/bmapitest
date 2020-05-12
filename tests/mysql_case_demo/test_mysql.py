@@ -5,27 +5,27 @@ from common import dao
 
 @ddt.ddt
 class MysqlCase(unittest.TestCase):
-    uid = "123"
-    phone = "987654321"
+    uid = "10715"
+    phone = "18701528054"
     # 数据库增、删、改、查四种相关操作的使用方法
     # @unittest.skip
     def test_mysql_select(self):
         result = dao.select_username_by_uid_and_phone(self.uid, self.phone)
         for res in result:
-            print(res.id, res.username, res.data)
+            print(res.uid, res.username, res.token)
 
-    # @unittest.skip
+    @unittest.skip
     def test_mysql_update(self):
         set_dict = {
             "username": "wang"
         }
         dao.update_username_by_uid_and_phone(self.uid, self.phone, set_dict)
 
-    # @unittest.skip
+    @unittest.skip
     def test_mysql_delete(self):
         dao.delete_by_uid_and_phone(self.uid, self.phone)
 
-    # @unittest.skip
+    @unittest.skip
     def test_mysql_insert(self):
         insert_data = {
             "uid": "123",
