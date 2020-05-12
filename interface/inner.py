@@ -52,7 +52,7 @@ class Interface(object, metaclass = InterfaceMeta):
     def __init__(self):
         from common.configure import CONFIG
         self.req = Req()
-        self.server = CONFIG['enviroment']
+        self.server = CONFIG['APP']
         self.data = {}
         self.params = {}
         self.headers = {}

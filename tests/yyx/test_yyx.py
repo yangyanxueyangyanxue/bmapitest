@@ -15,8 +15,8 @@ class Yyx(unittest.TestCase):
       :return:
       """
         login_name=""
-        interface=InterfaceCenter.get_interface(login_name)
-        print(interface.get_user_info())
+        interface=InterfaceCenter.get_user(login_name)
+        # print(interface.get_user_info())
 
 if __name__=='__main__':
     unittest.main()

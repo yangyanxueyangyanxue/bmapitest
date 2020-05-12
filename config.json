@@ -1,0 +1,116 @@
+{
+    "testing": {
+        "env_online": "internet",
+        "env_internal": "internal",
+        "internal": {
+            "APP": "https://test.app.babamama.cn/",
+            "group_server": "http://34.196.111.166:9888",
+
+            "users_json_file_name": "yyx.json",
+
+
+            "headers": {
+                "App-Id": "3336",
+                "xd": "testdevice",
+                "d": "testdevice",
+                "X-Forwarded-For": "110.66.108.138",
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            "params": {
+                "ptvn": "2",
+                "mcc": "460",
+                "ver": "4.1.60",
+                "vercode": "4.1.60.184",
+                "os": "iOS",
+                "api": "13500000",
+                "model": "iPhone10",
+                "cl": "zh-Hans-JP",
+                "countryCode": "US",
+                "androidid": "testand"
+            },
+            "local_user_info": ["uid", "token", "nickname", ],
+            "checker": 0,
+            "ignore_fields": [
+                    "shopIcon",
+                    "shopType",
+                    "shop_app_ios_url",
+                    "shop_app_android_url",
+                    "video_info.size",
+                    "video_info.length"
+            ]
+        },
+        "internet": {
+            "enviroment": "http://live.ksmobile.net",
+            "users_json_file_name": "internet_users.json",
+            "group_server": "http://34.196.111.166:9888",
+            "group_cms_server": "http://34.196.111.166:9088",
+            "relation_server": "http://34.196.111.166:7531",
+            "pay_server": "http://live.ksmobile.net",
+            "im_cms_server": "http://34.206.5.66:7172",
+            "im_server": "http://34.227.218.212:8080",
+            "im_file": "internet_im_seqid.json",
+            "headers": {
+                "Version-Name": "1.8.1",
+                "Version-Code": "181",
+                "Device-Type": "2"
+            },
+            "params": {
+                "ptvn": "2",
+                "mcc": "460",
+                "ver1": "2.0",
+                "vercode": "2.0",
+                "os": "iOS",
+                "api": "12900000",
+                "model": "iPhone10",
+                "cl": "zh-Hans-JP",
+
+                "androidid": "testand"
+            },
+            "local_user_info": ["uid",  "token", "nickname"],
+            "checker": 0,
+            "ignore_fields": [
+                    "shopIcon",
+                    "shopType",
+                    "shop_app_ios_url",
+                    "shop_app_android_url",
+                    "video_info.size",
+                    "video_info.length"
+            ]
+        }
+    },
+    "log": {
+        "version": 1,
+        "formatters": {
+            "brief": {
+                "format": "%(asctime)s [%(levelname)s] [%(filename)s:%(funcName)s:%(lineno)d] %(message)s"
+            },
+            "standard": {
+                "format": "%(asctime)s [%(levelname)s] - [%(filename)s] - %(message)s",
+                "datefmt": "%Y%m%d %H:%M:%S"
+            }
+        },
+        "handlers": {
+            "console": {
+                "class": "logging.StreamHandler",
+                "formatter": "brief",
+                "level": "INFO",
+                "stream": "ext://sys.stdout"
+            },
+            "file": {
+                "class": "logging.FileHandler",
+                "formatter": "standard",
+                "level": "DEBUG",
+                "filename": "run.log",
+                "mode": "w",
+                "encoding": "utf8"
+            }
+        },
+        "root": {
+            "level": "DEBUG",
+            "handlers": ["console", "file"]
+        }
+    },
+    "install_pkg": {
+        "requests":""
+    }
+}

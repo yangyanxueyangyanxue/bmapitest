@@ -48,46 +48,9 @@ class UserFactory(object):
         if not os.path.exists(UserFactory.user_file_path):
             raise FileNotFoundError("file " + user_file_name + " is not found in users")
 
-    @classmethod
-    def get_user(cls, name, pwd = ''):
-        """
-        获取用户
-        支持邮箱、手机
-        """
-        name = str(name)
-
-        if cache.has(name):
-            return cache.get(name)
-
-        # 手机号
-        if '@' not in name:
-            if not name.startswith('86'):
-                name = '86' + name
-        user_model = cls.get_user_by_account(name, pwd)
-        cache.set(name, user_model)
-        return user_model
 
     @classmethod
-    def get_user_by_account(cls, name, pwd=''):
-        """
-        通过账号获取用户
-        本地获取不到则通过密码登录
-        """
-        logger.info('user account: %s pwd:%s' % (name, pwd))
-        try:
-            u = cls.get_user_from_local(name)
-        except AssertionError as err:
-            if pwd is '':
-                logger.error("get user failed: %s"% err)
-                raise Exception(err)
-            u = cls.get_user_from_login(name, pwd)
-        except Exception as err:
-            logger.error("get user failed: %s"% err)
-            raise Exception(err)
-        return u
-
-    @classmethod
-    def get_user_by_uid(cls, uid, token, package = "LiveMe"):
+    def get_user_by_uid(cls, uid, token, package = "BBMM"):
         """
         通过uid获取用户
         """
@@ -99,17 +62,38 @@ class UserFactory(object):
         })
 
     @classmethod
-    def get_no_user(cls):
+    def get_user(cls, uid):
         """
-        匿名用户
-        假的uid和token
+        获取用户
         """
-        info = {
-            'uid': '700000000000000000',
-            'token': 'XX123456789a123456789a123456789a12',
-            'nickname': 'Anonymous User'
-        }
-        return InterfaceModel(info)
+        uidStr = str(uid)
+
+        if cache.has(uid):
+            return cache.get(uid)
+
+        # uid
+        user_model = cls.get_user_by_account(uid)
+        cache.set(uidStr, user_model)
+        return user_model
+
+    @classmethod
+    def get_user_by_account(cls, uid):
+        """
+        通过账号获取用户
+        本地获取不到则通过密码登录
+        """
+        logger.info('user account: %s uid:%s' % (uid))
+        try:
+            u = cls.get_user_from_local(uid)
+        except AssertionError as err:
+            if uid is '':
+                logger.error("get user failed: %s" % err)
+                raise Exception(err)
+            u = cls.get_user_from_login(uid)
+        except Exception as err:
+            logger.error("get user failed: %s" % err)
+            raise Exception(err)
+        return u
 
     @classmethod
     def _get_local_data(cls, name):
@@ -122,46 +106,46 @@ class UserFactory(object):
         return data.get(name)
 
     @classmethod
-    def get_user_from_local(cls, name):
+    def get_user_from_local(cls, uid):
         """
         从本地数据获取用户
         """
-        info = cls.get_local_user_info(name)
+        info = cls.get_local_user_info(uid)
         return InterfaceModel(info)
 
     @classmethod
-    def get_user_from_login(cls, name, pwd):
+    def get_user_from_login(cls, uid):
         """
         直接通过密码登录获取用户
         将数据存储在本地
         """
-        assert pwd, 'password empty'
-        cls.update_token(name, pwd)
-        info = cls._get_local_data(name)
+        assert uid, 'password empty'
+        cls.update_token(uid)
+        info = cls._get_local_data(uid)
         return InterfaceModel(info)
 
     @classmethod
-    def get_local_user_info(cls, name):
+    def get_local_user_info(cls, uid):
         """
         获取本地用户信息
         并验证token
         """
-        user = cls._get_local_data(name)
-        assert user, 'user %s not exist' % name
+        user = cls._get_local_data(uid)
+        assert user, 'user %s not exist' % uid
 
         uid = user.get('uid')
         token = user.get('token')
-        package = user.get("package", "LiveMe")
+        package = user.get("package", "BBMM")
 
         if not cls.is_token_valid(uid, token):
             logger.info('token invalid')
             assert 'password' in user, 'password empty'
-            cls.update_token(name, user['password'], package)
-            user = cls._get_local_data(name)
+            cls.update_token(uid, package)
+            user = cls._get_local_data(uid)
         return user
 
     @classmethod
-    def get_user_info(cls, name, pwd):
+    def get_user_info(cls, name):
         pass
 
     @classmethod
@@ -174,34 +158,33 @@ class UserFactory(object):
         return r['data']['user']['user_info']
 
     @classmethod
-    def update_token(cls, name, pwd, package = "LiveMe"):
+    def update_token(cls, uid,  package = "BBMM"):
         """
         更新本地token
         """
-        r = cls.get_new_token(name, pwd, package)
+        r = cls.get_new_token(uid,  package)
         data = {
             'token': r[0],
             'uid': r[1],
-            'password': pwd,
             'package': package
         }
-        cls._update_data(name, data)
+        cls._update_data(uid, data)
         return r
 
     @classmethod
-    def get_new_token(cls, name, pwd, package):
+    def get_new_token(cls, uid, package):
         """
-        查询账号服务器，登录获取最新token
+        链接数据库获取最新token
         (token, uid)
         """
-        cm = CMAccount(package)
-        r = cm.login(name, pwd)
-        sso_token = r['data']['sso_token']
-
-        Interface.package = package
-        sns = interface.sns.SNS(sso_token)
-        r = sns.login_cm()
-        assert success(r), r
+        # cm = CMAccount(package)
+        # r = cm.login(uid)
+        # sso_token = r['data']['sso_token']
+        #
+        # Interface.package = package
+        # sns = interface.sns.SNS(sso_token)
+        # r = sns.login_cm()
+        # assert success(r), r
 
         token = r['data']['token']
         uid = r['data']['user']['user_info']['uid']
@@ -209,7 +192,7 @@ class UserFactory(object):
         return (token, uid)
 
     @classmethod
-    def _update_data(cls, name, info):
+    def _update_data(cls, uid, info):
         """
         更新本地存储的token
         """
@@ -217,12 +200,12 @@ class UserFactory(object):
             data = json.load(f)
 
         # 增加新用户
-        if name not in data:
-            data[name] = info
+        if uid not in data:
+            data[uid] = info
             need_update = True
         # 更新老用户
         else:
-            old_info = data[name]
+            old_info = data[uid]
             need_update = False
 
             for k, v in info.items():
@@ -259,65 +242,7 @@ class UserFactory(object):
             return False
         return True
 
-    @classmethod
-    def create_new_user(cls, email, pwd):
-        """
-        注册新用户
-        目前只接受email注册
-        """
-        cm = CMAccount()
-        r = cm.register(email, pwd)
-        sso_token = r['data'].get('sso_token')
-        if not sso_token:
-            logger.info('register failed: %s' % email)
-            return
 
-        sns = SNS(sso_token)
-        r = sns.save_user_info(email)
-        return r['data']
-
-    @classmethod
-    def active_new_user(cls, username, password, package="LiveMe"):
-        """
-        账号系统激活新用户
-        APP端未注册
-        """
-        cm_cgi = CMAccount(package)
-        cm_api = CMAccountAPI(package)
-
-        def _active(this_username, this_password):
-            """
-            邮箱激活接口，无需通过激活邮件
-            """
-            cm_api.active(this_username)
-            return cm_cgi.login(this_username, this_password)
-
-        res = cm_cgi.register(username, password)
-        if res["ret"] == 4051:
-            res = _active(username, password)
-        elif res["ret"] == 12006:
-            return None
-        return res
-
-    @classmethod
-    def login_account(cls, username, password, package="LiveMe"):
-        """
-        账号系统登录
-        """
-        cm_cgi = CMAccount(package)
-        cm_api = CMAccountAPI(package)
-
-        def _active(this_username, this_password):
-            """
-            邮箱激活接口，无需通过激活邮件
-            """
-            cm_api.active(this_username)
-            return cm_cgi.login(this_username, this_password)
-
-        res = cm_cgi.login(username, password)
-        if res["ret"] == 4051:
-            res = _active(username, password)
-        return res
 
     @classmethod
     def check_local_data(cls):
@@ -372,11 +297,12 @@ class CMAccount(object):
         )
         self.headers = {"appid": appid, "sid": self.sid, "sig": self.sig}
 
-    def login(self, name, pwd):
+    '''改成你自己的逻辑  --小雪'''
+    def login(self, uid):
         # url = "http://proxy.ksmobile.com/1/cgi/login"
         # url = "http://iag.ksmobile.net/1/cgi/login"
         url = "http://qa_iag.ksmobile.net/1/cgi/login"
-        d = {'name': name, 'password': pwd}
+        d = {'uid': uid}
         r = requests.post(url, data=d, headers=self.headers).json()
         # assert r['ret'] is 1, r
         return r
@@ -420,16 +346,16 @@ class CMAccount(object):
                 i = ""
             sig += i
         return sig
-
+    # def ..
 
 class CMAccountAPI(object):
     #问下客户端开发？？？
     def __init__(self, package=""):
         self.client_info = {
             "bbmm": {
-                "client_id": "213704893",
-                "client_secret": "0882C07F47EAFBE1EF4BA0DBAFB080D6",
-                "client_ip": "1.1.1.1"
+                "Version-Name": "1.8.1",
+                "Version-Code": "181",
+                "Device-Type": "2"
             },
 
             }

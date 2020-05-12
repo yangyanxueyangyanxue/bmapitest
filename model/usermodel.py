@@ -52,7 +52,7 @@ class InterfaceModel(object):
         self.uid = user_info.get('uid')
         self.token = user_info.get('token')
         self.name = user_info.get('nickname')
-        self.package = user_info.get("package", "LiveMe")
+        self.package = user_info.get("package", "BBMM")
 
         # 归属个人的通用请求数据
         # todo: 是否interface中的数据直接引用user的更合理？

@@ -21,7 +21,7 @@ class InterfaceInstanceFactory:
         #接口实例需要登陆的情况下，还是通过用户工厂创建实例
 
         if username is not None:
-            return UserFactory.get_user(username,password)
+            return UserFactory.get_user(username)
 
 #创建工厂实例
 InterfaceCenter=InterfaceInstanceFactory()

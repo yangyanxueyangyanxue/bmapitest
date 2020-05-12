@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="620bb25a-3e6c-4f9e-a6af-177d14c0d9a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper/_global.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper/paytm_checksum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface/bind.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bmapitest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bmapitest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/mysql_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/mysql_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/inner.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/inner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/user_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/user_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/usermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/usermodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/yyx/test_yyx.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/test_yyx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/yyx.json" beforeDir="false" afterPath="$PROJECT_DIR$/user/yyx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lanuch_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/launch_all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/project_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/universe.py" beforeDir="false" afterPath="$PROJECT_DIR$/universe.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1blQs0ZY305WR3yDd8U5ylTp1LA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\bmapitest\interface" />
+      <recent name="C:\Users\Admin\Documents\bmapitest" />
+      <recent name="C:\Users\Admin\Documents\bmapitest\helper" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="620bb25a-3e6c-4f9e-a6af-177d14c0d9a1" name="Default Changelist" comment="" />
+      <created>1589204402267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589204402267</updated>
+      <workItem from="1589204403522" duration="6298000" />
+      <workItem from="1589253869435" duration="333000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2018" y="115" key="SettingsEditor" timestamp="1589254201781">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2018" y="115" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589254201781" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/usermodel.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
