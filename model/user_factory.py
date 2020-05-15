@@ -13,7 +13,7 @@ from interface.bind import Bind
 from interface.inner import Interface
 from model.usermodel import InterfaceModel
 import interface
-
+from common import dao
 import json
 import os
 import random
@@ -139,7 +139,7 @@ class UserFactory(object):
 
         if not cls.is_token_valid(uid, token):
             logger.info('token invalid')
-            assert 'password' in user, 'password empty'
+            assert 'token' in user, 'token empty'
             cls.update_token(uid, package)
             user = cls._get_local_data(uid)
         return user
@@ -172,7 +172,7 @@ class UserFactory(object):
         return r
 
     @classmethod
-    def get_new_token(cls, uid, package):
+    def get_new_token(cls, uid):
         """
         链接数据库获取最新token
         (token, uid)
@@ -186,10 +186,13 @@ class UserFactory(object):
         # r = sns.login_cm()
         # assert success(r), r
 
-        token = r['data']['token']
-        uid = r['data']['user']['user_info']['uid']
+        result = dao.select_username_by_uid_and_phone(uid)
+        for res in result:
+           return res.token
 
-        return (token, uid)
+
+
+
 
     @classmethod
     def _update_data(cls, uid, info):
@@ -297,38 +300,7 @@ class CMAccount(object):
         )
         self.headers = {"appid": appid, "sid": self.sid, "sig": self.sig}
 
-    '''改成你自己的逻辑  --小雪'''
-    def login(self, uid):
-        # url = "http://proxy.ksmobile.com/1/cgi/login"
-        # url = "http://iag.ksmobile.net/1/cgi/login"
-        url = "http://qa_iag.ksmobile.net/1/cgi/login"
-        d = {'uid': uid}
-        r = requests.post(url, data=d, headers=self.headers).json()
-        # assert r['ret'] is 1, r
-        return r
 
-    def register(self, name, pwd):
-        # url = "https://proxy.ksmobile.com/1/cgi/register"
-        # url = "https://iag.ksmobile.net/1/cgi/register"
-        url = "http://qa_iag.ksmobile.net/1/cgi/register"
-        d = {'name': name, 'password': pwd}
-        r = requests.post(url, data=d, headers=self.headers).json()
-        return r
-
-    def refresh(self, sid):
-        """
-        获取sso_token
-        这个sid不是uid
-        应该是需要获取到用户唯一的sid才可以
-        暂时无用
-        """
-        url = "http://proxy.ksmobile.com/1/cgi/refresh"
-        # url = "http://proxy.ksmobile.com/1/cgi/refresh"
-        # url = "http://iag.ksmobile.net/1/cgi/refresh"
-        url = "http://qa_iag.ksmobile.net/1/cgi/refresh"
-        d = {'sid': sid}
-        r = requests.post(url, data=d, headers=self.headers).json()
-        return r
 
     def _sidstr(self, s):
         sid_str = hashlib.md5()
