@@ -1,19 +1,23 @@
 # 数据库的相关信息（host，username，password等）统一放到 db_conf 中
 from common import mysql_db
 import time
+from common.mysql_db import TableModel
 
 
-def select_username_by_uid_and_phone(uid, phone):
+def select_username_by_uid_and_phone(uid,phone):
     # 创建数据库实例, 数据库名等相关信息在 mysql_conf.py 中配置
     db = mysql_db.connect("bbmmapptest")
-    # 创建数据表实例, 表为数据库中一张存在的表
+
+    #创建数据表实例, 表为数据库中一张存在的表
     table_users = db.get_table("bm_member")
+
     # where 子句
     # 支持符号: <, <=, >, >=, =, !=
     # 默认为 and 连接
     where_list = [
         "uid = {}".format(uid),
-        "phone_number = {}".format(phone),
+        "phone = {}".format(phone)
+
     ]
     # 支持 or 连接, 以下为 or 连接示例
     # 列表 第 0 位 添加"and" 或 "or"
@@ -23,7 +27,9 @@ def select_username_by_uid_and_phone(uid, phone):
     #     "phone_number = {}".format(phone),
     #     "id < 10"
     # ]
+
     result = table_users.select(where_list)
+
     return result
 
 

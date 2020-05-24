@@ -8,7 +8,7 @@ from common.configure import CONFIG
 from common.log import logger
 from common.util import hl, hl_bg, FONT_RED
 from helper import cache
-from interface.sns import SNS
+#from interface.sns import SNS
 from interface.bind import Bind
 from interface.inner import Interface
 from model.usermodel import InterfaceModel
@@ -43,7 +43,7 @@ class UserFactory(object):
 
     @staticmethod
     def set_user_file(user_file_name):
-        UserFactory.user_file_path = ROOT_DIR + "/users/" + user_file_name
+        UserFactory.user_file_path = ROOT_DIR + "/user/" + user_file_name
         logger.debug(UserFactory.user_file_path)
         if not os.path.exists(UserFactory.user_file_path):
             raise FileNotFoundError("file " + user_file_name + " is not found in users")
@@ -62,34 +62,34 @@ class UserFactory(object):
         })
 
     @classmethod
-    def get_user(cls, uid):
+    def get_user(cls, name):
         """
         获取用户
         """
-        uidStr = str(uid)
+        uidStr = str(name)
 
-        if cache.has(uid):
-            return cache.get(uid)
+        if cache.has(name):
+            return cache.get(name)
 
         # uid
-        user_model = cls.get_user_by_account(uid)
+        user_model = cls.get_user_by_account(name)
         cache.set(uidStr, user_model)
         return user_model
 
     @classmethod
-    def get_user_by_account(cls, uid):
+    def get_user_by_account(cls,name):
         """
         通过账号获取用户
         本地获取不到则通过密码登录
         """
-        logger.info('user account: %s uid:%s' % (uid))
+        # logger.info('user account: %s uid:%s' % (name))
         try:
-            u = cls.get_user_from_local(uid)
+            u = cls.get_user_from_local(name)
         except AssertionError as err:
-            if uid is '':
+            if name is '':
                 logger.error("get user failed: %s" % err)
                 raise Exception(err)
-            u = cls.get_user_from_login(uid)
+            u = cls.get_user_from_login(name)
         except Exception as err:
             logger.error("get user failed: %s" % err)
             raise Exception(err)
@@ -106,32 +106,32 @@ class UserFactory(object):
         return data.get(name)
 
     @classmethod
-    def get_user_from_local(cls, uid):
+    def get_user_from_local(cls, name):
         """
         从本地数据获取用户
         """
-        info = cls.get_local_user_info(uid)
+        info = cls.get_local_user_info(name)
         return InterfaceModel(info)
 
     @classmethod
-    def get_user_from_login(cls, uid):
+    def get_user_from_login(cls, name):
         """
         直接通过密码登录获取用户
         将数据存储在本地
         """
-        assert uid, 'password empty'
-        cls.update_token(uid)
-        info = cls._get_local_data(uid)
+        assert name, 'password empty'
+        cls.update_token(name)
+        info = cls._get_local_data(name)
         return InterfaceModel(info)
 
     @classmethod
-    def get_local_user_info(cls, uid):
+    def get_local_user_info(cls, name):
         """
         获取本地用户信息
         并验证token
         """
-        user = cls._get_local_data(uid)
-        assert user, 'user %s not exist' % uid
+        user = cls._get_local_data(name)
+        assert user, 'user %s not exist' % name
 
         uid = user.get('uid')
         token = user.get('token')
@@ -162,7 +162,7 @@ class UserFactory(object):
         """
         更新本地token
         """
-        r = cls.get_new_token(uid,  package)
+        r = cls.get_new_token(uid, package)
         data = {
             'token': r[0],
             'uid': r[1],

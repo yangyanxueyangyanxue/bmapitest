@@ -2,17 +2,19 @@ import unittest
 import ddt
 # 数据库相关具体操作统一放到 dao 内，并暴露接口，dao 模块下还有具体的使用说明，请移步 /common/dao 模块
 from common import dao
+from common import db_conf
 
 @ddt.ddt
 class MysqlCase(unittest.TestCase):
     uid = "10715"
-    phone = "18701528054"
+    phone_number = "18701528054"
     # 数据库增、删、改、查四种相关操作的使用方法
     # @unittest.skip
     def test_mysql_select(self):
-        result = dao.select_username_by_uid_and_phone(self.uid, self.phone)
+        result = dao.select_username_by_uid_and_phone(self.uid,self.phone_number)
+
         for res in result:
-            print(res.uid, res.username, res.token)
+            print(res.uid, res.nickname, res.token)
 
     @unittest.skip
     def test_mysql_update(self):

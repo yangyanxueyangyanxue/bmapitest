@@ -23,7 +23,7 @@ non_register_class = ["Interface", "SNS"]
 #     "liveme": "lm",
 #     "royallive": "ar",
 #     "alive": "us"
-}
+# }
 
 class InterfaceMeta(type):
     """

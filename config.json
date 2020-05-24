@@ -28,7 +28,7 @@
                 "countryCode": "US",
                 "androidid": "testand"
             },
-            "local_user_info": ["uid", "token", "nickname", ],
+            "local_user_info": ["uid", "token", "nickname" ],
             "checker": 0,
             "ignore_fields": [
                     "shopIcon",

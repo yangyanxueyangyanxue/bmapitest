@@ -3,7 +3,7 @@
 用户级别的操作行为
 是接口请求的封装
 """
-import service
+
 from common.log import logger
 from common.util import hl
 import os

@@ -1,20 +1,20 @@
 MYSQL_ALL_DB={
-    "shoptest":{
-        "database":"shoptest",
+    "bbmmapptest":{
+        "database":"bbmmapptest",
         "host":"47.94.161.105",
         "user":"homes",
         "password":"NDkzNzliZTZhMTB",
 
     },
-    "FINA": {
-        "database": "bbmmapptest",
+    "homes": {
+        "database": "homes",
         "host": "47.94.161.105",
         "user": "homes",
         "password": "NDkzNzliZTZhMTB"
     },
-    "bbmmapptest": {
-        "database": "homestest",
-        "host": "10.60.82.77",
+    "shoptest": {
+        "database": "shoptest",
+        "host": "47.94.161.105",
         "user": "homes",
         "password": "NDkzNzliZTZhMTB"}
     #url:

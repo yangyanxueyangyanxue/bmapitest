@@ -1,0 +1,3 @@
+20200524 19:13:40 [INFO] - [log.py] - logger init
+20200524 19:13:40 [INFO] - [mysql_db.py] - create mysql connection ok: bbmmapptest
+20200524 19:13:41 [INFO] - [mysql_db.py] - create mysql table ok: bm_member
