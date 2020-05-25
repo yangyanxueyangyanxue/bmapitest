@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620bb25a-3e6c-4f9e-a6af-177d14c0d9a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interface/result_sql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner-1.7.7-py3.8.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner-1.7.7-py3.8.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner-1.7.7-py3.8.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner-1.7.7-py3.8.egg-info/installed-files.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner-1.7.7-py3.8.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner-1.7.7-py3.8.egg-info/zip-safe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/xmlrunner/xmlrunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/bind.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/family.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/community.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/community.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/user_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/user_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/yyx/run.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/run.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/yyx/test_yyx.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/test_yyx.py" afterDir="false" />
-    </list>
+    <list default="true" id="620bb25a-3e6c-4f9e-a6af-177d14c0d9a1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,7 +171,7 @@
       <workItem from="1589958717963" duration="13855000" />
       <workItem from="1590027922739" duration="627000" />
       <workItem from="1590317002986" duration="10716000" />
-      <workItem from="1590388617293" duration="1608000" />
+      <workItem from="1590388617293" duration="2076000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1589263141451</created>
@@ -219,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590323655703</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改验证token是否有效的接口">
+      <created>1590390561567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590390561567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,17 +218,19 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1" />
     <MESSAGE value="数据库连接OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据库连接OK" />
+    <MESSAGE value="修改验证token是否有效的接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改验证token是否有效的接口" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="234" y="0" key="CommitChangelistDialog2" timestamp="1590323653150">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2271" y="52" key="CommitChangelistDialog2" timestamp="1590390560923">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2271" y="52" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589508783787" />
+    <state x="2271" y="52" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590390560923" />
     <state x="234" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590323653150" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1590319365212">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2552" y="145" key="FileChooserDialogImpl" timestamp="1590390983801">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590390983801" />
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1590319365212" />
     <state width="1877" height="204" key="GridCell.Tab.0.bottom" timestamp="1590389001896">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -285,10 +276,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2018" y="115" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590027825028" />
-    <state x="2467" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589508790985">
+    <state x="2467" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590390566352">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2467" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589508790985" />
+    <state x="2467" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590390566352" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
