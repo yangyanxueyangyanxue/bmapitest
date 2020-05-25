@@ -3,9 +3,9 @@
         "env_online": "internet",
         "env_internal": "internal",
         "internal": {
-            "APP": "https://test.app.babamama.cn/",
-            "group_server": "http://34.196.111.166:9888",
-
+            "APP": "https://test.app.babamama.cn",
+            "SHOP": "http://34.196.111.166:9888",
+            "Result":"http://139.129.222.1:9999",
             "users_json_file_name": "yyx.json",
 
 
@@ -40,7 +40,7 @@
             ]
         },
         "internet": {
-            "enviroment": "http://live.ksmobile.net",
+            "app": "https://app.babamama.cn",
             "users_json_file_name": "internet_users.json",
             "group_server": "http://34.196.111.166:9888",
             "group_cms_server": "http://34.196.111.166:9088",

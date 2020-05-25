@@ -1,2 +1,5 @@
-20200524 20:25:31 [INFO] - [log.py] - logger init
-20200524 20:25:31 [DEBUG] - [user_factory.py] - C:\Users\Admin\Documents\bmapitest/user/yyx.json
+20200525 14:43:22 [INFO] - [log.py] - logger init
+20200525 14:43:22 [DEBUG] - [user_factory.py] - C:\Users\Admin\Documents\bmapitest/user/yyx.json
+20200525 14:43:22 [ERROR] - [user_factory.py] - get user failed: name 'alias_param' is not defined
+20200525 14:43:22 [ERROR] - [user_factory.py] - get user failed: name 'alias_param' is not defined
+20200525 14:43:22 [ERROR] - [user_factory.py] - get user failed: name 'alias_param' is not defined

@@ -17,7 +17,7 @@ class Community(Interface):
             'netst': '1',
             'token': token,
             'tuid': uid,
-            'app': 'liveme'
+            'app': 'BBMM'
         }
         self.set_data(data)
     def home_topic(self,type):

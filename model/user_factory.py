@@ -9,7 +9,7 @@ from common.log import logger
 from common.util import hl, hl_bg, FONT_RED
 from helper import cache
 #from interface.sns import SNS
-from interface.bind import Bind
+from interface.family import Family
 from interface.inner import Interface
 from model.usermodel import InterfaceModel
 import interface
@@ -233,13 +233,13 @@ class UserFactory(object):
         """
         验证token是否有效，不区分主包、中东包、美国包
         #用create_video接口进行测试
-        用/bind/get来验证
+        用/family/get来验证
         """
         if not uid or not token:
             logger.debug('uid or token null')
             return False
-        I = Bind(uid, token)
-        r = I.get_bind()
+        I = Family(uid, token)
+        r = I.get_family()
         if r['msg'] == 'token error' or r['status'] != '200':
             logger.info('token error')
             return False

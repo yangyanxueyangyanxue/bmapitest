@@ -4,12 +4,12 @@
 from interface.inner import Interface
 
 
-class Bind(Interface):
+class Family(Interface):
     """
     验证token是否有效
     """
     def __init__(self, uid, token):
-        super(Bind, self).__init__()
+        super(Family, self).__init__()
         self.uid = uid
         self.token = token
         data = {
@@ -17,11 +17,9 @@ class Bind(Interface):
             'tuid': uid
         }
         self.set_data(data)
-    '''
-    记得改接口调用新项目的token地址  --小雪
-    '''
-    def get_bind(self):
-        interface = '/bind/get'
+
+    def get_family(self):
+        interface = '/api/v1/family/lists'
         d = {
             'tuid': self.uid,
         }
