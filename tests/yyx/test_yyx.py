@@ -15,24 +15,29 @@ InterfaceCenter.set_user_file(user_file)
 class test_Yyx(unittest.TestCase):
     #@unittest.skip
     @read_csv_dict("body.csv")
-    def test_home_topic(self,Uid,type):
+    def test_home_topic(self,uid,type):
 
         """
         校验home_topic接口是否请求成功，
         """
-        u = InterfaceCenter.get_user(Uid)
+        u = InterfaceCenter.get_user(uid)
         a = u.home_topic(type)
 
         staus = a['status']
-        code = a['code']
-        if staus == '401'  :
-
+        code = a.code
+        print(code)
+        if code == '401':
             print('参数解析错误')
-        elif staus == '500' :
+        elif code == '500':
             print('服务端错误')
-        elif staus =='200':
+        elif code =='200':
             data=a.data
             print('请求接口成功'+ data)
+        elif code =='404':
+            print("页面未找到")
+
+
+
 
 if __name__=='__main__':
     unittest.main()

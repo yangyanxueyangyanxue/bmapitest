@@ -7,14 +7,14 @@ from common import db_conf
 @ddt.ddt
 class MysqlCase(unittest.TestCase):
     uid = "10715"
-    phone_number = "18701528054"
+    #phone_number = "18701528054"
     # 数据库增、删、改、查四种相关操作的使用方法
     # @unittest.skip
     def test_mysql_select(self):
-        result = dao.select_username_by_uid_and_phone(self.uid,self.phone_number)
+        result = dao.select_username_by_uid_and_phone(self.uid)
 
         for res in result:
-            print(res.uid, res.nickname, res.token)
+            print(res.token,res.uid, res.nickname,)
 
     @unittest.skip
     def test_mysql_update(self):

@@ -17,16 +17,7 @@
                 "Content-Type": "application/x-www-form-urlencoded"
             },
             "params": {
-                "ptvn": "2",
-                "mcc": "460",
-                "ver": "4.1.60",
-                "vercode": "4.1.60.184",
-                "os": "iOS",
-                "api": "13500000",
-                "model": "iPhone10",
-                "cl": "zh-Hans-JP",
-                "countryCode": "US",
-                "androidid": "testand"
+
             },
             "local_user_info": ["uid", "token", "nickname" ],
             "checker": 0,

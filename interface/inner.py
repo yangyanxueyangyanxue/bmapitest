@@ -19,11 +19,11 @@ import inspect
 interface_class = {}
 login_required_class = []
 non_register_class = ["Interface", "SNS"]
-# alias_param = {
-#     "liveme": "lm",
-#     "royallive": "ar",
-#     "alive": "us"
-# }
+alias_param = {
+    "liveme": "lm",
+    "royallive": "ar",
+    "alive": "us"
+}
 
 class InterfaceMeta(type):
     """
@@ -126,7 +126,7 @@ class Interface(object, metaclass = InterfaceMeta):
         kwargs["headers"] = h
 
         try:
-            response = self.req.request(method, url, **kwargs)
+            response = self.req.requests(method, url, **kwargs)
         except Exception as e:
             logger.warning(e)
             raise
@@ -165,10 +165,10 @@ class Interface(object, metaclass = InterfaceMeta):
         h = self.headers.copy()
 
         # 非登录接口不更新此参数
-        if p:
-            p.update({
-                "alias": alias_param[self.package.lower()]
-            })
+        # if p:
+        #     p.update({
+        #         "alias":alias_param[self.package.lower()]
+        #     })
 
         # 基础参数+自定参数
         if data:

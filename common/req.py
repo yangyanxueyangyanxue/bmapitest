@@ -47,8 +47,9 @@ class Req(object):
         logger.debug('args:%s' % str(args))
         logger.debug('kwargs: %s' % str(kwargs))
 
+
         start_time=time.time()
-        res=self._req.requests(*args,**kwargs)
+        res=self._req.request(*args,**kwargs,verify=False)
         end_time=(time.time()-start_time)*1000
         self._req.close()
         #logger.info('time:%d % end_time')

@@ -86,13 +86,13 @@ class UserFactory(object):
         try:
             u = cls.get_user_from_local(name)
         except AssertionError as err:
-            if name is '':
+            if name is None:
                 logger.error("get user failed: %s" % err)
                 raise Exception(err)
-            u = cls.get_user_from_login(name)
-        except Exception as err:
-            logger.error("get user failed: %s" % err)
-            raise Exception(err)
+            # u = cls.get_user_from_login(name)
+        # except Exception as err:
+        #     logger.error("get user failed: %s" % err)
+        #     raise Exception(err)
         return u
 
     @classmethod
@@ -113,16 +113,16 @@ class UserFactory(object):
         info = cls.get_local_user_info(name)
         return InterfaceModel(info)
 
-    @classmethod
-    def get_user_from_login(cls, name):
-        """
-        直接通过密码登录获取用户
-        将数据存储在本地
-        """
-        assert name, 'password empty'
-        cls.update_token(name)
-        info = cls._get_local_data(name)
-        return InterfaceModel(info)
+    # @classmethod
+    # def get_user_from_login(cls, name):
+    #     """
+    #     直接通过密码登录获取用户
+    #     将数据存储在本地
+    #     """
+    #     assert name, 'password empty'
+    #     cls.update_token(name)
+    #     info = cls._get_local_data(name)
+    #     return InterfaceModel(info)
 
     @classmethod
     def get_local_user_info(cls, name):
@@ -133,6 +133,7 @@ class UserFactory(object):
         user = cls._get_local_data(name)
         assert user, 'user %s not exist' % name
 
+        #如果本地存在uid和token，用本地得uid和token去验证
         uid = user.get('uid')
         token = user.get('token')
         package = user.get("package", "BBMM")
@@ -140,7 +141,8 @@ class UserFactory(object):
         if not cls.is_token_valid(uid, token):
             logger.info('token invalid')
             assert 'token' in user, 'token empty'
-            cls.update_token(uid, package)
+            #如果验证失败，用json文件种得name去获取最新的token
+            cls.update_token(name, package)
             user = cls._get_local_data(uid)
         return user
 
@@ -164,15 +166,15 @@ class UserFactory(object):
         """
         r = cls.get_new_token(uid, package)
         data = {
-            'token': r[0],
-            'uid': r[1],
+            'token': r,
+            'uid': uid,
             'package': package
         }
         cls._update_data(uid, data)
         return r
 
     @classmethod
-    def get_new_token(cls, uid):
+    def get_new_token(cls, uid, package):
         """
         链接数据库获取最新token
         (token, uid)

@@ -25,6 +25,7 @@ class Community(Interface):
         url = "/api/v1/content/home-topic"
         data = {
             "type": type,
+           
 
         }
         # headers = {
@@ -35,4 +36,4 @@ class Community(Interface):
         #     "ver": ver3,
         #     "vercode": ver4
         # }
-        return self.post(url, data=data)
+        return self.post(url, params=data)

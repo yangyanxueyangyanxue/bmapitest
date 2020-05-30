@@ -1,5 +1,26 @@
-20200525 14:43:22 [INFO] - [log.py] - logger init
-20200525 14:43:22 [DEBUG] - [user_factory.py] - C:\Users\Admin\Documents\bmapitest/user/yyx.json
-20200525 14:43:22 [ERROR] - [user_factory.py] - get user failed: name 'alias_param' is not defined
-20200525 14:43:22 [ERROR] - [user_factory.py] - get user failed: name 'alias_param' is not defined
-20200525 14:43:22 [ERROR] - [user_factory.py] - get user failed: name 'alias_param' is not defined
+20200530 18:06:54 [INFO] - [log.py] - logger init
+20200530 18:06:54 [DEBUG] - [user_factory.py] - C:\Users\Admin\Documents\bmapitest/user/yyx.json
+20200530 18:06:55 [DEBUG] - [req.py] - args:('POST', 'https://test.app.babamama.cn/api/v1/family/lists')
+20200530 18:06:55 [DEBUG] - [req.py] - kwargs: {'params': {'uid': '10715', 'token': '6vwlwJRhrHXZt-M7YjMJgtXM96dVVVcr'}, 'data': {'token': '6vwlwJRhrHXZt-M7YjMJgtXM96dVVVcr', 'uid': '10715'}, 'headers': {'App-Id': '3336', 'xd': 'testdevice', 'd': 'testdevice', 'X-Forwarded-For': '110.66.108.138', 'Content-Type': 'application/x-www-form-urlencoded', 't': '1590833215027'}}
+20200530 18:06:55 [DEBUG] - [connectionpool.py] - Starting new HTTPS connection (1): test.app.babamama.cn:443
+20200530 18:06:55 [DEBUG] - [connectionpool.py] - https://test.app.babamama.cn:443 "POST /api/v1/family/lists?uid=10715&token=6vwlwJRhrHXZt-M7YjMJgtXM96dVVVcr HTTP/1.1" 200 None
+20200530 18:06:55 [DEBUG] - [req.py] - response:{"code":403,"message":"Forbidden","data":"权限不足.","cost":"0.028"}
+20200530 18:06:55 [INFO] - [user_factory.py] - token error
+20200530 18:06:55 [INFO] - [user_factory.py] - token invalid
+20200530 18:06:55 [INFO] - [mysql_db.py] - create mysql connection ok: bbmmapptest
+20200530 18:06:56 [INFO] - [mysql_db.py] - create mysql table ok: bm_member
+20200530 18:06:56 [DEBUG] - [req.py] - args:('POST', 'https://test.app.babamama.cn/api/v1/content/home-topic')
+20200530 18:06:56 [DEBUG] - [req.py] - kwargs: {'params': {'type': '1'}, 'data': {'netst': '1', 'token': '6vwlwJRhrHXZt-M7YjMJgtXM96dVVVcr', 'tuid': '10715', 'app': 'BBMM'}, 'headers': {'App-Id': '3336', 'xd': 'testdevice', 'd': 'testdevice', 'X-Forwarded-For': '110.66.108.138', 'Content-Type': 'application/x-www-form-urlencoded', 't': '1590833216158'}}
+20200530 18:06:56 [DEBUG] - [connectionpool.py] - Starting new HTTPS connection (1): test.app.babamama.cn:443
+20200530 18:06:56 [DEBUG] - [connectionpool.py] - https://test.app.babamama.cn:443 "POST /api/v1/content/home-topic?type=1 HTTP/1.1" 200 None
+20200530 18:06:56 [DEBUG] - [req.py] - response:{"code":404,"message":"Not Found","data":"页面未找到。","cost":"0.022"}
+20200530 18:06:56 [DEBUG] - [req.py] - args:('POST', 'https://test.app.babamama.cn/api/v1/content/home-topic')
+20200530 18:06:56 [DEBUG] - [req.py] - kwargs: {'params': {'type': '2'}, 'data': {'netst': '1', 'token': '6vwlwJRhrHXZt-M7YjMJgtXM96dVVVcr', 'tuid': '10715', 'app': 'BBMM'}, 'headers': {'App-Id': '3336', 'xd': 'testdevice', 'd': 'testdevice', 'X-Forwarded-For': '110.66.108.138', 'Content-Type': 'application/x-www-form-urlencoded', 't': '1590833216158'}}
+20200530 18:06:56 [DEBUG] - [connectionpool.py] - Starting new HTTPS connection (1): test.app.babamama.cn:443
+20200530 18:06:57 [DEBUG] - [connectionpool.py] - https://test.app.babamama.cn:443 "POST /api/v1/content/home-topic?type=2 HTTP/1.1" 200 None
+20200530 18:06:57 [DEBUG] - [req.py] - response:{"code":404,"message":"Not Found","data":"页面未找到。","cost":"0.022"}
+20200530 18:06:57 [DEBUG] - [req.py] - args:('POST', 'https://test.app.babamama.cn/api/v1/content/home-topic')
+20200530 18:06:57 [DEBUG] - [req.py] - kwargs: {'params': {'type': '3'}, 'data': {'netst': '1', 'token': '6vwlwJRhrHXZt-M7YjMJgtXM96dVVVcr', 'tuid': '10715', 'app': 'BBMM'}, 'headers': {'App-Id': '3336', 'xd': 'testdevice', 'd': 'testdevice', 'X-Forwarded-For': '110.66.108.138', 'Content-Type': 'application/x-www-form-urlencoded', 't': '1590833216158'}}
+20200530 18:06:57 [DEBUG] - [connectionpool.py] - Starting new HTTPS connection (1): test.app.babamama.cn:443
+20200530 18:06:57 [DEBUG] - [connectionpool.py] - https://test.app.babamama.cn:443 "POST /api/v1/content/home-topic?type=3 HTTP/1.1" 200 None
+20200530 18:06:57 [DEBUG] - [req.py] - response:{"code":404,"message":"Not Found","data":"页面未找到。","cost":"0.022"}

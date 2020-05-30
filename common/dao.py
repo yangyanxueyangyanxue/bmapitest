@@ -4,7 +4,7 @@ import time
 from common.mysql_db import TableModel
 
 
-def select_username_by_uid_and_phone(uid,phone):
+def select_username_by_uid_and_phone(uid):
     # 创建数据库实例, 数据库名等相关信息在 mysql_conf.py 中配置
     db = mysql_db.connect("bbmmapptest")
 
@@ -16,7 +16,7 @@ def select_username_by_uid_and_phone(uid,phone):
     # 默认为 and 连接
     where_list = [
         "uid = {}".format(uid),
-        "phone = {}".format(phone)
+        # "phone = {}".format(phone)
 
     ]
     # 支持 or 连接, 以下为 or 连接示例

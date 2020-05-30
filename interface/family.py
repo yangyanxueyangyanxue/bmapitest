@@ -14,14 +14,15 @@ class Family(Interface):
         self.token = token
         data = {
             'token': token,
-            'tuid': uid
+            'uid': uid
         }
         self.set_data(data)
 
     def get_family(self):
         interface = '/api/v1/family/lists'
-        d = {
-            'tuid': self.uid,
+        d = {"uid":self.uid,
+             "token":self.token
+
         }
-        r = self.post(interface, data=d)
+        r = self.post(interface, params=d)
         return r
