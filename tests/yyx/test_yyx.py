@@ -25,17 +25,18 @@ class test_Yyx(unittest.TestCase):
 
         staus = a['status']
         code = a.code
-        print(code)
+        #print(code)
         if code == '401':
             print('参数解析错误')
         elif code == '500':
             print('服务端错误')
+        elif code =='101':
+            print('用户信息错误')
+        elif code =='404':
+            print("页面未找到")
         elif code =='200':
             data=a.data
             print('请求接口成功'+ data)
-        elif code =='404':
-            print("页面未找到")
-
 
 
 

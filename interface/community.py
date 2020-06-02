@@ -10,30 +10,21 @@ from common.req import Req
 class Community(Interface):
     def __init__(self,uid,token):
         super(Community, self).__init__()
-        self.server = CONFIG["APP"]
+        self.server = CONFIG["show"]
         self.uid = uid
         self.token = token
         data = {
-            'netst': '1',
             'token': token,
-            'tuid': uid,
-            'app': 'BBMM'
+            'uid': uid,
         }
         self.set_data(data)
     def home_topic(self,type):
-        # 1:绑定，3: 忘记密码，4: 注册或验证码方式登录，5: 只发送短信
+        # 话题列表接口
         url = "/api/v1/content/home-topic"
-        data = {
-            "type": type,
-           
-
+        p = {
+            "token":self.token,
+            "uid":self.uid
         }
-        # headers = {
-        #     "xd": device_id
-        # }
-        # params = {
-        #     "os": device_type,
-        #     "ver": ver3,
-        #     "vercode": ver4
-        # }
-        return self.post(url, params=data)
+        d={"type":type}
+        return self.post(url,data=d,params=p)
+

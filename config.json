@@ -4,8 +4,10 @@
         "env_internal": "internal",
         "internal": {
             "APP": "https://test.app.babamama.cn",
-            "SHOP": "http://34.196.111.166:9888",
+            "SHOP": "http://shop.babamama.cn",
             "Result":"http://139.129.222.1:9999",
+            "album": "https://test.album.babamama.cn ",
+            "show": "http://test.show.babamama.cn",
             "users_json_file_name": "yyx.json",
 
 
