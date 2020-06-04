@@ -4,7 +4,7 @@ import unittest
 import random
 from common.ddt_csv_reader import read_csv_dict
 import json
-from interface.community import Community
+from interface.comments import Community
 from interface.result_sql import Result_sql
 from common import read_csv_dict
 from model.factory import InterfaceCenter

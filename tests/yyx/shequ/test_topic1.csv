@@ -1,2 +1,2 @@
-name,password
-bbmm,bbmm_BBMM_112233
+uid,name,password,title,subtitle,content,thumbnail,background,sort,status,type,options
+10715,bbmm,bbmm_BBMM_112233,'yyxtest','yyxtest','yyxtest',http://test.cdn.babamama.cn/albumtest/images/2020/05/25/image_159040334852541029.jpg?w=500&h=375,http://test.cdn.babamama.cn/albumtest/images/2020/05/25/image_159040334852541029.jpg?w=500&h=375,1,1,1,[]

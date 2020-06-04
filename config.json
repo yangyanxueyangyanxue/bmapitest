@@ -3,11 +3,12 @@
         "env_online": "internet",
         "env_internal": "internal",
         "internal": {
-            "APP": "https://test.app.babamama.cn",
+            "APP": "http://test.app.babamama.cn",
             "SHOP": "http://shop.babamama.cn",
             "Result":"http://139.129.222.1:9999",
-            "album": "https://test.album.babamama.cn ",
+            "album": "http://test.album.babamama.cn",
             "show": "http://test.show.babamama.cn",
+            "globle": "http://test.app.babamama.cn/api/proxyshow",
 
             "users_json_file_name": "yyx.json",
 

@@ -14,11 +14,11 @@ from common.req import Req
 4.新建一个投票话题，动态放入话题，点赞，分享，评论，投票选择，再次投票
 5.放入话题后，查看话题详情，修改话题
 """
-class Community(Interface):
+class Comments(Interface):
 
     def __init__(self,uid,token):
 
-        super(Community, self).__init__()
+        super(Comments, self).__init__()
         self.server = CONFIG["show"]
         self.uid = uid
         self.token = token
@@ -28,68 +28,17 @@ class Community(Interface):
         }
         self.set_data(data)
 
-    def share_cate(self,cate_id):
+    def Comments_add_comment(self,cate_id,com_detail):
 
-        #主题分享落地页  cate_id		主题id
+        #主题下得评论接口
 
         url="/api/v1/content/share-cate"
         p = {
             "token": self.token,
             "uid": self.uid
         }
-        d = {"cate_id": cate_id}
+        d = {"cate_id": cate_id,
+             "com_detail":com_detail}
         return self.post(url, data=d, params=p)
 
-    def home_topic(self,type):
 
-        # 话题列表接口 type 0首页 1发布页
-
-        url = "/api/v1/content/home-topic"
-        p = {
-            "token":self.token,
-            "uid":self.uid
-        }
-        d={"type":type}
-        return self.post(url,data=d,params=p)
-
-    def content_vote(self,topicId,itemId):
-
-        # 话题列表接口
-        # topicId		话题id
-        # itemId		投票选项id
-
-        url = "/api/v1/content/home-topic"
-        p = {
-            "token":self.token,
-            "uid":self.uid
-            }
-        d= {"topicId":topicId,
-           "itemId":itemId
-            }
-        return self.post(url,data=d,params=p)
-
-    def comments_complaint(self,commentId):
-
-        # 评论举报接口 commentId		评论/回复id
-
-        url = "/api/v1/content/home-topic"
-        p = {
-            "token":self.token,
-            "uid":self.uid
-        }
-        d={"commentId":commentId}
-        return self.post(url,data=d,params=p)
-
-    def comments_theme(self,type,cateId,page):
-
-        # 话题详情接口
-
-        url = "/api/v1/content/home-topic"
-        p = {
-            "token":self.token,
-            "uid":self.uid
-        }
-        d={"type":type,
-           "cateId":cateId,
-           "page":page}
-        return self.post(url,data=d,params=p)
