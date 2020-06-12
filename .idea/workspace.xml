@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="620bb25a-3e6c-4f9e-a6af-177d14c0d9a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/interface/Backstage_ad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/contents.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/praise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_topic1_csv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/yyx/shequ/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_topic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_topic1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface/family_memory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface/home_book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface/share.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/yyx/shequ/run.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_them.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_theme.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/backstage.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/backstage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/community.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/comments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/Backstage_ad.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/Backstage_ad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/comments.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/comments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/contents.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/contents.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/praise.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/praise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/user_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/user_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/usermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/usermodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/yyx/run.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/run.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/yyx/shequ/test_topic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_topic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/yyx/shequ/test_topic1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_topic1.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/yyx/test_yyx.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/test_yyx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/yyx.json" beforeDir="false" afterPath="$PROJECT_DIR$/user/yyx.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/work/daima" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -61,7 +65,7 @@
       <recent name="C:\Users\Admin\Documents\bmapitest\helper" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in test_topic.py">
+  <component name="RunManager" selected="Python tests.Nosetests in test_theme.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="bmapitest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,7 +88,23 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Nosetests for tests.yyx.shequ.test_topic" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+    <configuration name="Nosetests for test_topic.Topic.test_topic" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <module name="bmapitest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx/shequ" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_topic.Topic.test_topic&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Nosetests for test_yyx.test_Yyx.test_home_topic" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <module name="bmapitest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,39 +116,23 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.yyx.shequ.test_topic&quot;" />
+      <option name="_new_target" value="&quot;test_yyx.test_Yyx.test_home_topic&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Nosetests for tests.yyx.shequ.test_topic.test_Topic" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+    <configuration name="Nosetests in test_theme.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <module name="bmapitest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx/shequ" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.yyx.shequ.test_topic.test_Topic&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Nosetests in test_mysql.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <module name="bmapitest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/mysql_case_demo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/mysql_case_demo/test_mysql.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/yyx/shequ/test_theme.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -137,7 +141,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx/shequ" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -166,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Nosetests in test_topic.py" />
+        <item itemvalue="Python tests.Nosetests in test_theme.py" />
         <item itemvalue="Python tests.Nosetests in test_yyx.py" />
-        <item itemvalue="Python tests.Nosetests for tests.yyx.shequ.test_topic.test_Topic" />
-        <item itemvalue="Python tests.Nosetests for tests.yyx.shequ.test_topic" />
-        <item itemvalue="Python tests.Nosetests in test_mysql.py" />
+        <item itemvalue="Python tests.Nosetests for test_yyx.test_Yyx.test_home_topic" />
+        <item itemvalue="Python tests.Nosetests in test_topic.py" />
+        <item itemvalue="Python tests.Nosetests for test_topic.Topic.test_topic" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +199,8 @@
       <workItem from="1590733034157" duration="601000" />
       <workItem from="1590818071178" duration="16760000" />
       <workItem from="1591080845683" duration="1302000" />
-      <workItem from="1591082816931" duration="45442000" />
+      <workItem from="1591082816931" duration="47362000" />
+      <workItem from="1591773233128" duration="36596000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1589263141451</created>
@@ -251,64 +256,64 @@
     </state>
     <state x="2271" y="52" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590390560923" />
     <state x="234" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590323653150" />
-    <state width="1278" height="55" key="DebuggerActiveHint" timestamp="1590832366562">
+    <state width="1278" height="70" key="DebuggerActiveHint" timestamp="1591795386493">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1278" height="55" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1590832366562" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1591251298958">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1278" height="70" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1591795386493" />
+    <state x="2552" y="145" key="FileChooserDialogImpl" timestamp="1591778268568">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591251298958" />
-    <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590390983801" />
+    <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591778268568" />
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1590319365212" />
-    <state width="1877" height="396" key="GridCell.Tab.0.bottom" timestamp="1591266163556">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom" timestamp="1591946247145">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="200" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591260415138" />
-    <state width="1877" height="396" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591266163556" />
-    <state width="1237" height="200" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590833213587" />
-    <state width="1877" height="396" key="GridCell.Tab.0.center" timestamp="1591266163556">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591946247145" />
+    <state width="1237" height="170" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591800063152" />
+    <state width="1877" height="415" key="GridCell.Tab.0.center" timestamp="1591946247145">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="200" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591260415138" />
-    <state width="1877" height="396" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591266163556" />
-    <state width="1237" height="200" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590833213587" />
-    <state width="1877" height="396" key="GridCell.Tab.0.left" timestamp="1591266163556">
+    <state width="1877" height="415" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591946247145" />
+    <state width="1237" height="170" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591800063152" />
+    <state width="1877" height="415" key="GridCell.Tab.0.left" timestamp="1591946247145">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="200" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591260415137" />
-    <state width="1877" height="396" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591266163556" />
-    <state width="1237" height="200" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590833213586" />
-    <state width="1877" height="396" key="GridCell.Tab.0.right" timestamp="1591266163556">
+    <state width="1877" height="415" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591946247145" />
+    <state width="1237" height="170" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591800063152" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right" timestamp="1591946247145">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="200" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591260415138" />
-    <state width="1877" height="396" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591266163556" />
-    <state width="1237" height="200" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590833213587" />
-    <state width="1237" height="190" key="GridCell.Tab.1.bottom" timestamp="1591253635860">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591946247145" />
+    <state width="1237" height="170" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591800063152" />
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom" timestamp="1591944034750">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="190" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591253635860" />
-    <state width="1877" height="360" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590664833188" />
-    <state width="1237" height="190" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590832432264" />
-    <state width="1237" height="190" key="GridCell.Tab.1.center" timestamp="1591253635860">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="386" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591944034750" />
+    <state width="1237" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591799772875" />
+    <state width="1877" height="386" key="GridCell.Tab.1.center" timestamp="1591944034750">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="190" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591253635860" />
-    <state width="1877" height="360" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590664833188" />
-    <state width="1237" height="190" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1590832432264" />
-    <state width="1237" height="190" key="GridCell.Tab.1.left" timestamp="1591253635860">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="386" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591944034750" />
+    <state width="1237" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1591799772874" />
+    <state width="1877" height="386" key="GridCell.Tab.1.left" timestamp="1591944034749">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="190" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591253635860" />
-    <state width="1877" height="360" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590664833188" />
-    <state width="1237" height="190" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1590832432264" />
-    <state width="1237" height="190" key="GridCell.Tab.1.right" timestamp="1591253635860">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="386" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591944034749" />
+    <state width="1237" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1591799772874" />
+    <state width="1877" height="386" key="GridCell.Tab.1.right" timestamp="1591944034750">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="190" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591253635860" />
-    <state width="1877" height="360" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590664833188" />
-    <state width="1237" height="190" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1590832432264" />
+    <state width="1877" height="386" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591944034750" />
+    <state width="1237" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1591799772875" />
     <state x="66" y="0" key="SettingsEditor" timestamp="1590829941449">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -323,15 +328,23 @@
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590659751589" />
     <state width="646" height="346" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1590826425189" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591932101741">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591932101741" />
     <state x="2467" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590390566352">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2467" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590390566352" />
-    <state x="2252" y="0" key="editAsTableFormatDialogDimension" timestamp="1591262479681">
+    <state x="2252" y="0" width="1581" height="691" key="editAsTableFormatDialogDimension" timestamp="1591786025330">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="221" y="0" key="editAsTableFormatDialogDimension/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591259361672" />
-    <state x="2252" y="0" key="editAsTableFormatDialogDimension/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591262479681" />
+    <state x="2252" y="0" width="1581" height="691" key="editAsTableFormatDialogDimension/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591786025330" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1591326936918">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591326936918" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -341,18 +354,35 @@
           <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/interface/Backstage_ad.py</url>
+          <line>237</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/yyx/test_yyx.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_test_Yyx_test_topic.coverage" NAME="Nosetests for test_topic.test_Yyx.test_topic Coverage Results" MODIFIED="1591249428046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_theme_Topic_test_theme.coverage" NAME="Nosetests for test_theme.Topic.test_theme Coverage Results" MODIFIED="1591869449416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_theme_Theme_test_theme.coverage" NAME="Nosetests for test_theme.Theme.test_theme Coverage Results" MODIFIED="1591869487903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_topic_py.coverage" NAME="Nosetests in test_topic.py Coverage Results" MODIFIED="1591869721534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_theme_Test_Topic_test_theme.coverage" NAME="Nosetests for test_theme.Test_Topic.test_theme Coverage Results" MODIFIED="1591869358306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_yyx_py.coverage" NAME="Nosetests in test_yyx.py Coverage Results" MODIFIED="1591933245976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_test_Topic_test_theme.coverage" NAME="Nosetests for test_topic.test_Topic.test_theme Coverage Results" MODIFIED="1591864872834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
     <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_mysql_py.coverage" NAME="Nosetests in test_mysql.py Coverage Results" MODIFIED="1591084520203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/mysql_case_demo" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_Topic_test_topic.coverage" NAME="Nosetests for test_topic.Topic.test_topic Coverage Results" MODIFIED="1591869594637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
     <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_test_Topic.coverage" NAME="Nosetests for tests.yyx.shequ.test_topic.test_Topic Coverage Results" MODIFIED="1591250259906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
-    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_topic_py.coverage" NAME="Nosetests in test_topic.py Coverage Results" MODIFIED="1591266163549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_theme_py.coverage" NAME="Nosetests in test_theme.py Coverage Results" MODIFIED="1591946247138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
     <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_mysql_MysqlCase_test_mysql_select.coverage" NAME="Nosetests for test_mysql.MysqlCase.test_mysql_select Coverage Results" MODIFIED="1590318819488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/mysql_case_demo" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_test_Topic_test_topic.coverage" NAME="Nosetests for test_topic.test_Topic.test_topic Coverage Results" MODIFIED="1591794061946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
     <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_mysql_MysqlCase.coverage" NAME="Nosetests for test_mysql.MysqlCase Coverage Results" MODIFIED="1589263263591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/mysql_case_demo" />
     <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_test_Yyx.coverage" NAME="Nosetests for test_yyx.test_Yyx Coverage Results" MODIFIED="1590659861507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
-    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_yyx_py.coverage" NAME="Nosetests in test_yyx.py Coverage Results" MODIFIED="1591266155128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
-    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_test_Yyx_test_home_topic.coverage" NAME="Nosetests for test_yyx.test_Yyx.test_home_topic Coverage Results" MODIFIED="1590832649025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_test_Yyx_test_home_topic.coverage" NAME="Nosetests for test_yyx.test_Yyx.test_home_topic Coverage Results" MODIFIED="1591872244084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 
 from interface.inner import Interface
 from common.configure import CONFIG
+import json
 
 #社区新建话题广告接口
 
@@ -193,7 +194,7 @@ class Backstage_ad(Interface):
         return r
 
     def bs_create_cate(self,token,title,subtitle,content,thumbnail,background,sort,
-                         status,type,options):
+                         status,type,items):
         '''
         新建话题接口
         title	是	string	标题
@@ -212,6 +213,18 @@ class Backstage_ad(Interface):
             'token': token,
 
         }
+        itemList= items.split('_');
+        if items is None:
+            options = []
+        else:
+            options = []
+            for x, item in enumerate(itemList):
+                if type == '2':
+                    options.append({'id': x, 'item': item})
+                elif type == '3':
+                    options.append({'item': item})
+
+
         d={ 'title': title,
             'subtitle': subtitle,
             'content': content,
@@ -220,7 +233,7 @@ class Backstage_ad(Interface):
             'sort': sort,
             'status': status,
             'type': type,
-            'options': options,
+            'options':json.dumps(options, ensure_ascii=False)
             }
         r = self.post(interface, params=p, data=d)
         return r

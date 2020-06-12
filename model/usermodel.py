@@ -51,7 +51,6 @@ class InterfaceModel(object):
     def __init__(self, user_info = {}):
         self.uid = user_info.get('uid')
         self.token = user_info.get('token')
-        self.name = user_info.get('nickname')
         self.package = user_info.get("package", "BBMM")
 
         # 归属个人的通用请求数据

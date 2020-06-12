@@ -1,24 +1,21 @@
 import ddt
 import unittest
 
-import random
-from common.ddt_csv_reader import read_csv_dict
-import json
 from interface.backstage import Backstage
 from interface.Backstage_ad import Backstage_ad
-
+from interface.contents import Content
 from interface.result_sql import Result_sql
 from common import read_csv_dict
 from model.factory import InterfaceCenter
+from model.user_factory import UserFactory
 user_file='yyx.json'
 InterfaceCenter.set_user_file(user_file)
 
 @ddt.ddt
-class test_Topic(unittest.TestCase):
+class Topic(unittest.TestCase):
     #@unittest.skip
     @read_csv_dict("test_topic1.csv")
-    def test_topic(self,uid,name,password,title,subtitle, content,thumbnail,background,sort,
-                         status,type,options):
+    def test_topic(self,uid,name,password,title,subtitle, content,thumbnail,background,sort,status,type,items):
 
         """
         创建话题流程
@@ -40,15 +37,17 @@ class test_Topic(unittest.TestCase):
             token = login['data']['token']
             creat=Backstage_ad()
             #新建话题
+
+
             creat_cate=creat.bs_create_cate(token,title,subtitle,content,thumbnail,background,sort,
-                         status,type,options)
+                         status,type,items)
             creat_code=creat_cate.code
             creat_message=creat_cate.message
             if creat_code == 200:
                 id=creat_cate.data.id
                 print(id)
                 #查看话题列表
-                cate_list=creat.bs_cate_list(token,type,)
+                cate_list=creat.bs_cate_list(token,type)
                 cate_list_code=cate_list.code
 
                 cate_list_message=cate_list.message
@@ -84,6 +83,14 @@ class test_Topic(unittest.TestCase):
         else:
             print('message' , login_message)
 
+
+#
+#     def test_theme(self):
+#         a = []
+#         b=['赞同','不赞同']
+#         for x,item in enumerate (b) :
+#             a.append({'item':x})
+#         print(a)
 
 
 

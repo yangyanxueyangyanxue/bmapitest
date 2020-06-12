@@ -90,7 +90,7 @@ class UserFactory(object):
                 logger.error("get user failed: %s" % err)
                 raise Exception(err)
             # u = cls.get_user_from_login(name)
-        # except Exception as err:
+             # except Exception as err:
         #     logger.error("get user failed: %s" % err)
         #     raise Exception(err)
         return u
@@ -242,7 +242,7 @@ class UserFactory(object):
             return False
         I = Family(uid, token)
         r = I.get_family()
-        if r['msg'] == 'token error' or r['status'] != '200':
+        if r['code'] != 200:
             logger.info('token error')
             return False
         return True
