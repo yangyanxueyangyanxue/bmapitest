@@ -2,6 +2,8 @@
 from interface.inner import Interface
 from common.configure import CONFIG
 import json
+import urllib
+import numpy as np
 
 #社区新建话题广告接口
 
@@ -208,35 +210,34 @@ class Backstage_ad(Interface):
         options	否	string	[{"item":"我"},{"item":"懒"},{"item":"啊"}]
 
         '''
+
+        # d = {'title': title,
+        #      'subtitle': subtitle,
+        #      'content': content,
+        #      'thumbnail': thumbnail,
+        #      'background': background,
+        #      'sort': sort,
+        #      'status': status,
+        #      'type': type
+        #      }
+
+        keys = ['title', 'subtitle', 'content', 'thumbnail', 'background', 'sort', 'status', 'type'];
+        values = [title, subtitle, content, thumbnail, background, sort, status, type]
+        if items is not None:
+            itemList = items.split('_');
+            for x, item in enumerate(itemList):
+                keys.append('options['+str(x)+'][item]');
+                values.append(item);
+        dictionary = dict(zip(keys, values)) #将两个键值对得list转换成json，然后把json转换成字典格式
         interface = '/backend/v1/cate/create-cate'
         p = {
             'token': token,
-
         }
-        itemList= items.split('_');
-        if items is None:
-            options = []
-        else:
-            options = []
-            for x, item in enumerate(itemList):
-                if type == '2':
-                    options.append({'id': x, 'item': item})
-                elif type == '3':
-                    options.append({'item': item})
 
-
-        d={ 'title': title,
-            'subtitle': subtitle,
-            'content': content,
-            'thumbnail': thumbnail,
-            'background': background,
-            'sort': sort,
-            'status': status,
-            'type': type,
-            'options':json.dumps(options, ensure_ascii=False)
-            }
-        r = self.post(interface, params=p, data=d)
+        r = self.post(interface, params=p, data=dictionary)
         return r
+
+
 
     def bs_set_cate_status(self, token, id, status,):
         '''

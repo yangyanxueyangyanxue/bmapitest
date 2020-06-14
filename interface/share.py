@@ -38,15 +38,15 @@ class Share(Interface):
              }
         return self.post(url, data=d, params=p)
 
-    def fm_cate_list(self, familyId, page=1):
-        #放进相册列表接口
-        url = "/api/v3/family-memory/cate-list"
-        p = {
-            "token": self.token,
-            "uid": self.uid
-        }
-        d = {"familyId": familyId,
-             "page": page
-             }
-        return self.post(url, data=d, params=p)
+    # def fm_cate_list(self, familyId, page=1):
+    #     #放进相册列表接口
+    #     url = "/api/v3/family-memory/cate-list"
+    #     p = {
+    #         "token": self.token,
+    #         "uid": self.uid
+    #     }
+    #     d = {"familyId": familyId,
+    #          "page": page
+    #          }
+    #     return self.post(url, data=d, params=p)
 

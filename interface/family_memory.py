@@ -25,9 +25,6 @@ class Family_memory(Interface):
         self.set_data(data)
 
     def fm_pic_list(self,familyId,page=1):
-
-
-
         url="/api/v3/family-memory/pic-list"
         p = {
             "token": self.token,
@@ -52,8 +49,6 @@ class Family_memory(Interface):
 
     def fm_mobile_pic_cate(self, familyId, picId,cateId):
         # 放进相册操作接口
-
-
         url = "/api/v3/family-memory/mobile-pic-cate"
         p = {
             "token": self.token,

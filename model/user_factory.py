@@ -86,9 +86,11 @@ class UserFactory(object):
         try:
             u = cls.get_user_from_local(name)
         except AssertionError as err:
-            if name is None:
-                logger.error("get user failed: %s" % err)
-                raise Exception(err)
+            # if name is None:
+            #     logger.error("get user failed: %s" % err)
+            #     raise Exception(err)
+            logger.error("error: %s" % err)
+            raise Exception(err)
             # u = cls.get_user_from_login(name)
              # except Exception as err:
         #     logger.error("get user failed: %s" % err)

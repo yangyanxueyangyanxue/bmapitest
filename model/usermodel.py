@@ -3,7 +3,6 @@
 用户级别的操作行为
 是接口请求的封装
 """
-
 from common.log import logger
 from common.util import hl
 import os
@@ -182,17 +181,17 @@ class InterfaceModel(object):
         r = req.post(path, params=params, data=data, headers=headers)
         return r
 
-    def get_client(self, name):
-        """
-        获取user对应的后端服务client
-        """
-        if name == 'relation':
-            from service.relation import Relation
-            return Relation(self.uid)
-        elif name == 'im':
-            from service.im.client import TcpClient
-            return TcpClient(self.uid, self.token)
-        assert 0, 'no service: %s' % service
+    # def get_client(self, name):
+    #     """
+    #     获取user对应的后端服务client
+    #     """
+    #     if name == 'relation':
+    #         from service.relation import Relation
+    #         return Relation(self.uid)
+    #     elif name == 'im':
+    #         from service.im.client import TcpClient
+    #         return TcpClient(self.uid, self.token)
+    #     assert 0, 'no service: %s' % service
 
 
 if __name__ == '__main__':
