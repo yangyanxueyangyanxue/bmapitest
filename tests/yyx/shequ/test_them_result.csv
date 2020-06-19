@@ -1,0 +1,2 @@
+caseld,requestUrl,method,params,resp,cost,result,message
+test_theme_type,/backend/v1/cate/create-cate,post,,them.respose,them.cost,them.message

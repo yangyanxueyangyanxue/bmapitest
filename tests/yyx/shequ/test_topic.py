@@ -18,7 +18,7 @@ class Topic(unittest.TestCase):
     def test_topic(self,uid,name,password,title,subtitle, content,thumbnail,background,sort,status,type,items):
 
         """
-        创建话题流程
+        创建话题流程  三种类型不同得话题
         1.登录后台
         2.获取list接口，前端展示得接口
         3.创建话题
@@ -45,7 +45,7 @@ class Topic(unittest.TestCase):
             creat_message=creat_cate.message
             if creat_code == 200:
                 id=creat_cate.data.id
-                print(id)
+
                 #查看话题列表
                 cate_list=creat.bs_cate_list(token,type)
                 cate_list_code=cate_list.code
@@ -56,11 +56,10 @@ class Topic(unittest.TestCase):
                     if cate_list != None:
                         for i, item in enumerate(cate_list_data):
                             cate_id=int(item['id'])
-                            print(11111)
-                            print(int(cate_id) is id)
+
                             if cate_id ==id:
                                 print("新建话题成功,后台列表增加数据成功")
-                                return
+
                 else:
                     print('cate_list_message' + cate_list_message)
 
@@ -73,7 +72,7 @@ class Topic(unittest.TestCase):
             topic_message=topic.message
             if topic_code == 200:
                 topic_data=topic.data
-                print(topic_data)
+
                 if topic_data != None:
                     for i,item in enumerate(topic_data):
                         if id==item['id']:
@@ -84,13 +83,28 @@ class Topic(unittest.TestCase):
             print('message' , login_message)
 
 
-#
-#     def test_theme(self):
-#         a = []
-#         b=['赞同','不赞同']
-#         for x,item in enumerate (b) :
-#             a.append({'item':x})
-#         print(a)
+    # @unittest.skip
+    @read_csv_dict("test_them_result.csv")
+    def test_them_result(batchld,caseld,requestUrl,method,params,resp,cost,result,message):
+        Result=Result_sql()
+        test_batch=Result.batch()
+        batchId=test_batch.data.batchId
+        Topic_result=Topic()
+        test_topic_result=Topic_result.test_topic()
+        test_topic_result_code=test_topic_result.code
+
+        if test_topic_result ==200:
+            result=0
+        else:
+            result=1
+
+        insertData=Result.insertData(batchId,caseld,requestUrl,method,params,resp,cost,result,message)
+        insertData_code=insertData.code
+        insertData_message=insertData.message
+        if insertData_code== 200:
+            print("插入测试数据成功",insertData_message)
+        else:
+            print(insertData_message)
 
 
 

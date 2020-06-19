@@ -1,0 +1,15 @@
+Column,Value (1)
+C1,name
+C2,password
+C3,uid
+C4,type
+C5,title
+C6,content
+C7,syncAlbum
+C8,status
+C9,recomCate
+C10,recomHome
+C11,remark
+C12,homeStartTime
+C13,cateStartTime
+C14,

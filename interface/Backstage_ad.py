@@ -44,71 +44,59 @@ class Backstage_ad(Interface):
         }
         r = self.post(interface, params=p)
         return r
-
-    def bs_content_get_list(self, token,userId, cateId,nickname,startTime,endTime,page,export,userType):
+    def bs_content_content(self,token,contentId):
         '''
-        动态列表接口
-        userId	否	int	用户id
-        cateId	否	int	话题id
-        nickname	否	string	生活秀昵称
-        startTime	否	string	开始时间
-        endTime	否	string	结束时间
-        page	否	int	分页
-        export	否	int	是否导出excel，默认0不导出，1导出
-        userType	否	int	用户类型 不传表示不区分用户 1ugc用户(真实用户) 2pgc用户(即生活秀自己的内置用户)
+
+
 
         '''
-        interface = '/backend/v1/cate/cate-list'
+        interface = '/backend/v1/content/content'
         p = {
             'token': token,
 
         }
-        d={ 'userId': userId,
-            'cateId': cateId,
-            'nickname': nickname,
-            'startTime': startTime,
-            'endTime': endTime,
-            'page': page,
-            'export': export,
-            'userType': userType,
+        d = {'contentId': contentId,
+             }
+        r = self.post(interface, params=p, data=d)
+        return r
+
+    def bs_content_get_list(self, token,page=1):
+        '''
+        作品管理列表
+
+
+        '''
+        interface = '/backend/v1/content/cate-list'
+        p = {
+            'token': token,
+
+        }
+        d={ 'page':page,
             }
         r = self.post(interface, params=p,data=d)
         return r
 
 
-    def bs_audit_cate_list(self, token,contentId,status,recomCate,recomHome,remark,homeStartTime,cateStartTime):
+    def bs_audit_list(self, token,page=1):
         '''
-        动态列表接口
-        contentId	是	int	作品id
-        status	是	int	0禁用 1通过
-        recomCate	否	int	0未推荐到主题 1推荐到主题
-        recomHome	否	int	0未推荐到首页 1推荐到首页
-        remark	否	string	作品备注
-        homeStartTime	否	int	首页开始时间（时间戳）
-        cateStartTime	否	int	话题开始时间
+       作品审核列表接口
 
         '''
-        interface = '/backend/v1/cate/cate-list'
+        interface = '/backend/v1/audit/list'
         p = {
             'token': token,
 
         }
-        d={ 'contentId': contentId,
-            'status': status,
-            'recomCate': recomCate,
-            'recomHome': recomHome,
+        d={ 'page': page,
 
-            'remark': remark,
-            'homeStartTime': homeStartTime,
-            'cateStartTime': cateStartTime,
             }
         r = self.post(interface, params=p,data=d)
         return r
 
-    def bs_audit_operate(self, token,contentId, status,recomCate,recomHome,remark,
-                         homeStartTime,cateStartTime,):
+    def bs_audit_operate(self,token,contentId,status,recomCate,recomHome,remark,
+                         homeStartTime,cateStartTime):
         '''
-        动态审核接口
+        作品审核接口
         contentId	是	int	作品id
         status	是	int	0禁用 1通过
         recomCate	否	int	0未推荐到主题 1推荐到主题
@@ -131,12 +119,11 @@ class Backstage_ad(Interface):
             'remark': remark,
             'homeStartTime': homeStartTime,
             'cateStartTime': cateStartTime,
-
             }
         r = self.post(interface, params=p,data=d)
         return r
 
-    def bs_update_status(self, token, id, status,):
+    def bs_update_status(self,token, id,status,):
         '''
         修改广告状态接口
 
@@ -211,16 +198,6 @@ class Backstage_ad(Interface):
 
         '''
 
-        # d = {'title': title,
-        #      'subtitle': subtitle,
-        #      'content': content,
-        #      'thumbnail': thumbnail,
-        #      'background': background,
-        #      'sort': sort,
-        #      'status': status,
-        #      'type': type
-        #      }
-
         keys = ['title', 'subtitle', 'content', 'thumbnail', 'background', 'sort', 'status', 'type'];
         values = [title, subtitle, content, thumbnail, background, sort, status, type]
         if items is not None:
@@ -233,11 +210,8 @@ class Backstage_ad(Interface):
         p = {
             'token': token,
         }
-
         r = self.post(interface, params=p, data=dictionary)
         return r
-
-
 
     def bs_set_cate_status(self, token, id, status,):
         '''

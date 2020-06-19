@@ -8,7 +8,7 @@ from common.req import Req
 #社区2.1版本app接口
 
 class Result_sql(Interface):
-    def __init__(self,uid,token):
+    def __init__(self):
         super(Result_sql, self).__init__()
         self.server = CONFIG["Result"]
 
@@ -21,7 +21,7 @@ class Result_sql(Interface):
         url = "automation/batch"
 
 
-        return self.post(url)
+        return self.get(url)
 
     def insertData(self,batchId,caseId,requestUrl,method,params,resp,cost,result,message):
         """
@@ -50,6 +50,6 @@ class Result_sql(Interface):
 
         }
 
-        return self.post(url, data=data)
+        return self.get(url, data=data)
 
 

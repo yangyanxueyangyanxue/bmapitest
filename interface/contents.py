@@ -84,7 +84,7 @@ class Content(Interface):
 
         # 话题详情接口
 
-        url = "/api/v1/content/home-topic"
+        url = "/api/v1/content/theme"
         p = {
             "token":self.token,
             "uid":self.uid
@@ -93,6 +93,7 @@ class Content(Interface):
            "cateId":cateId,
            "page":page}
         return self.post(url,data=d,params=p)
+
     def comments_content(self,content_id):
         url = "/api/v1/content/content"
         p = {
@@ -116,7 +117,7 @@ class Content(Interface):
              }
         return self.post(url, data=d, params=p)
 
-    def Comments_save(self, cateIds,title,content,syncAlbum):
+    def Comments_save(self, cateIds,title,content,syncAlbum='false'):
         # 主题下发布动态
 
 
@@ -125,7 +126,7 @@ class Content(Interface):
             "token": self.token,
             "uid": self.uid
         }
-        d = {"cateIds": cateIds,
+        d = {"cateIds[]": cateIds,
              "title": title,
              "content": content,
              "syncAlbum": syncAlbum,
