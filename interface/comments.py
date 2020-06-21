@@ -25,16 +25,16 @@ class Comments(Interface):
         }
         self.set_data(data)
 
-    def Comments_add_comment(self,cate_id,com_detail):
+    def Comments_add_comment(self,content_id,com_detail):
 
         #主题下得评论接口
 
-        url="/api/v1/content/share-cate"
+        url="/api/v1/comments/add-comment"
         p = {
             "token": self.token,
             "uid": self.uid
         }
-        d = {"cate_id": cate_id,
+        d = {"content_id": content_id,
              "com_detail":com_detail}
         return self.post(url, data=d, params=p)
 

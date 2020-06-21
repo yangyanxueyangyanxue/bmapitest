@@ -1,6 +1,7 @@
 import ddt
 import unittest
 
+from common.csv_writer import writer_csv
 from interface.backstage import Backstage
 from interface.Backstage_ad import Backstage_ad
 from interface.contents import Content
@@ -60,6 +61,10 @@ class Topic(unittest.TestCase):
                             if cate_id ==id:
                                 print("新建话题成功,后台列表增加数据成功")
 
+
+
+
+
                 else:
                     print('cate_list_message' + cate_list_message)
 
@@ -107,6 +112,5 @@ class Topic(unittest.TestCase):
             print(insertData_message)
 
 
-
-if __name__=='__main__':
+if __name__ == '__main__':
     unittest.main()

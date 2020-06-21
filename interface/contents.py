@@ -28,7 +28,7 @@ class Content(Interface):
         }
         self.set_data(data)
 
-    def share_cate(self,cate_id):
+    def content_share_cate(self,cate_id):
 
         #主题分享落地页  cate_id		主题id
 
@@ -40,7 +40,7 @@ class Content(Interface):
         d = {"cate_id": cate_id}
         return self.post(url, data=d, params=p)
 
-    def home_topic(self,type):
+    def content_home_topic(self,type):
 
         # 话题列表接口 type 0首页 1发布页
 
@@ -68,7 +68,7 @@ class Content(Interface):
             }
         return self.post(url,data=d,params=p)
 
-    def comments_complaint(self,commentId):
+    def content_complaint(self,commentId):
 
         # 评论举报接口 commentId		评论/回复id
 
@@ -80,7 +80,7 @@ class Content(Interface):
         d={"commentId":commentId}
         return self.post(url,data=d,params=p)
 
-    def comments_theme(self,type,cateId,page=1):
+    def content_theme(self,type,cateId,page=1):
 
         # 话题详情接口
 
@@ -94,7 +94,7 @@ class Content(Interface):
            "page":page}
         return self.post(url,data=d,params=p)
 
-    def comments_content(self,content_id):
+    def content_content(self,content_id):
         url = "/api/v1/content/content"
         p = {
             "token": self.token,
@@ -104,7 +104,7 @@ class Content(Interface):
 
         return self.post(url, data=d, params=p)
 
-    def Comments_home(self,page):
+    def content_home(self,page):
 
         #主题下得评论接口
 
@@ -117,7 +117,7 @@ class Content(Interface):
              }
         return self.post(url, data=d, params=p)
 
-    def Comments_save(self, cateIds,title,content,syncAlbum='false'):
+    def content_save(self, cateIds,title,content,syncAlbum='false'):
         # 主题下发布动态
 
 
@@ -130,6 +130,19 @@ class Content(Interface):
              "title": title,
              "content": content,
              "syncAlbum": syncAlbum,
+
+             }
+        return self.post(url, data=d, params=p)
+
+    def content_share(self,content_id):
+        # 普通话题下得动态，分享接口
+
+        url = "/api/v1/content/share"
+        p = {
+            "token": self.token,
+            "uid": self.uid
+        }
+        d = {"content_id": content_id,
 
              }
         return self.post(url, data=d, params=p)

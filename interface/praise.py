@@ -24,7 +24,7 @@ class Praise(Interface):
         }
         self.set_data(data)
 
-    def Praise_praise(self,comment_id):
+    def Praise_praise(self,content_id):
 
         #主题下得评论接口
 
@@ -33,7 +33,7 @@ class Praise(Interface):
             "token": self.token,
             "uid": self.uid
         }
-        d = {"comment_id": comment_id,
+        d = {"content_id": content_id,
              }
         return self.post(url, data=d, params=p)
 

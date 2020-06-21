@@ -1,2 +1,2 @@
-name,password,uid,type,title,content,status,recomCate,recomHome,remark,homeStartTime,cateStartTime
-bbmm,bbmm_BBMM_112233,10715,0,yyx,yyx测试数据发动态,1,1,1,"",0,0
+name,password,uid,type,title,content,status,recomCate,recomHome,remark,homeStartTime,cateStartTime,com_detail
+bbmm,bbmm_BBMM_112233,10715,0,yyx,yyx测试数据发动态,1,1,1,"",0,0,yyx评论下
