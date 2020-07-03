@@ -12,10 +12,10 @@ user_file='yyx.json'
 InterfaceCenter.set_user_file(user_file)
 
 @ddt.ddt
-class test_Yyx(unittest.TestCase):
+class snow_Yyx(unittest.TestCase):
     #@unittest.skip
     @read_csv_dict("body.csv")
-    def test_home_topic(self,uid,type):
+    def testhometopic(self,uid,type):
 
         """
         校验home_topic接口是否请求成功，
