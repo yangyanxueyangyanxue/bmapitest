@@ -42,8 +42,9 @@ class Result_sql(Interface):
             "caseId": caseId,
             "requestUrl": requestUrl,
             "method": method,
-            "params": resp,
-            "cost": batchId,
+            "params": params,
+            "resp":resp,
+            "cost": cost,
             "result": result,
             "message": message,
 

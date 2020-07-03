@@ -90,7 +90,7 @@ class Topic(unittest.TestCase):
 
     # @unittest.skip
     @read_csv_dict("test_them_result.csv")
-    def test_them_result(batchld,caseld,requestUrl,method,params,resp,cost,result,message):
+    def test_them_result(caseId,requestUrl,method,params,resp,cost,message):
         Result=Result_sql()
         test_batch=Result.batch()
         batchId=test_batch.data.batchId
@@ -103,7 +103,7 @@ class Topic(unittest.TestCase):
         else:
             result=1
 
-        insertData=Result.insertData(batchId,caseld,requestUrl,method,params,resp,cost,result,message)
+        insertData=Result.insertData(batchId,caseId,requestUrl,method,params,resp,cost,result,message)
         insertData_code=insertData.code
         insertData_message=insertData.message
         if insertData_code== 200:

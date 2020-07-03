@@ -23,8 +23,7 @@ class Content(Interface):
         self.uid = uid
         self.token = token
         data = {
-            'token': token,
-            'uid': uid,
+
         }
         self.set_data(data)
 

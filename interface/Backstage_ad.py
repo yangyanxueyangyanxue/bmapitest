@@ -211,8 +211,8 @@ class Backstage_ad(Interface):
             'token': token,
         }
         #参数写入csv文件
-        data_head = ['caseld', 'requestUrl', 'method', 'params', 'resp', 'cost', 'result', 'message']
-        data_body = ['test_theme_type', '/backend/v1/cate/create-cate', 'post', json.dumps(dictionary,ensure_ascii=False), 'them.respose', 'them.cost‘,’1']
+        data_head = ['caseId','requestUrl','method', 'params','resp','cost','message']
+        data_body = ['test_theme_type','/backend/v1/cate/create-cate','post',json.dumps(dictionary,ensure_ascii=False),'them.respose','them.cost‘,’1']
         writer_csv('test_them_result.csv', data_head, data_body);
         r = self.post(interface, params=p, data=dictionary)
         return r
