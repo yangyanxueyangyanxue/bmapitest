@@ -36,6 +36,24 @@ class Creatbook(unittest.TestCase):
         homebook_home_message=homebook_home.message
 
         if homebook_home_code == 200:
+            #草稿箱id为0不会变，所以把list提出来
+            idlist=[]
+            for i,item in enumerate(homebook_home_data):
+                if item['id'] !='0':
+                    idlist.append(item['id'])
+                    #print(idlist)
+
+            id = random.choice(idlist)#取出家书类型id
+            homebook_cateauth=u.homebook_cateauth(familyId,id)
+            homebook_cateauth_code=homebook_cateauth.code
+            if homebook_cateauth_code == 200:
+
+
+
+
+
+
+
             print('请求接口成功' ,homebook_home_data)
             homebook_home_total1=homebook_home_data[0]['total'] #记录当前草稿箱得数量
             #选择照片pic_list，选择得是家庭相册照片，没有用upload接口，这个接口是把手机照片传到服务器，转给对应得接口

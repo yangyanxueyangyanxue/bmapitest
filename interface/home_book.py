@@ -50,7 +50,7 @@ class Home_book(Interface):
 
              }
         return self.post(url, data=d, params=p)
-    def homebook_homecate(self,familyId,cateId,page):
+    def homebook_homecate(self,familyId,cateId,page=1):
         """
 
         家书列表接口
@@ -161,7 +161,7 @@ class Home_book(Interface):
         """
 
         获取标签下级列表及标签权限接口（草稿箱列表打开后请求这个接口）
-        编辑草稿箱需求请求这个获取标签，一级，二级
+        编辑草稿箱需求请求这个获取标签，一级，二级 首页选择编辑，选择好家书类型，接着请求二级标签
         id	是	int	标签id
         """
         url = "/api/v3/homebook/cate-auth"
