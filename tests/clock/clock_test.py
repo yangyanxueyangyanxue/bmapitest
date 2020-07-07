@@ -20,6 +20,17 @@ InterfaceCenter.set_user_file(user_file)
 class test_Hxl(unittest.TestCase):
     # @unittest.skip
 
+    """
+    1.点击首页纪念册图标--查看home接口，首页得信息
+    2.创建家书-保存到草稿箱，(首页)
+    3。添加照片，删除草稿，删除章节
+    4.发布
+    5.发布成功后查看详情
+    6.查看是否在首页feed流
+    7.编辑家书，重新发布
+
+    """
+
     @read_csv_dict("add_type.csv")
     # 添加打卡类型
     def test_add_type(self, uid, typeName,familyId, rewardContent, rewardType, successCount, executorUid):
