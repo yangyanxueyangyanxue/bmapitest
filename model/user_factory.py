@@ -86,9 +86,11 @@ class UserFactory(object):
         try:
             u = cls.get_user_from_local(name)
         except AssertionError as err:
-            if name is None:
-                logger.error("get user failed: %s" % err)
-                raise Exception(err)
+            # if name is None:
+            #     logger.error("get user failed: %s" % err)
+            #     raise Exception(err)
+            logger.error("error: %s" % err)
+            raise Exception(err)
             # u = cls.get_user_from_login(name)
              # except Exception as err:
         #     logger.error("get user failed: %s" % err)
@@ -242,7 +244,7 @@ class UserFactory(object):
             return False
         I = Family(uid, token)
         r = I.get_family()
-        if r['msg'] == 'token error' or r['status'] != '200':
+        if r['code'] != 200:
             logger.info('token error')
             return False
         return True

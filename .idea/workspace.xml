@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="620bb25a-3e6c-4f9e-a6af-177d14c0d9a1" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/interface/clock.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/clock/__init__.py" afterDir="false" />
@@ -20,6 +21,24 @@
       <change beforePath="$PROJECT_DIR$/model/user_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/user_factory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/yyx/run.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/run.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/yyx/test_yyx.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/test_yyx.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/interface/feed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/yyx/homebook/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/yyx/homebook/creatbook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/yyx/homebook/creathomebook.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/yyx/homebook/run.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/Backstage_ad.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/Backstage_ad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/sys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/family.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/family_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/family_memory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/home_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/home_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/yyx/shequ/run.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/shequ/run.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/yyx/shequ/test_them_result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_them_result.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/yyx/shequ/test_topic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_topic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/yyx/shequ/test_topic1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tests/yyx/shequ/test_topic1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/yyx.json" beforeDir="false" afterPath="$PROJECT_DIR$/user/yyx.json" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +49,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -50,7 +70,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bbmmapp" />
+=======
+    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> origin/master
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -64,8 +89,15 @@
       <recent name="C:\Users\Admin\Documents\bmapitest" />
       <recent name="C:\Users\Admin\Documents\bmapitest\helper" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\bmapitest\tests\yyx\shequ" />
+    </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python tests.Unittests in clock_test.py">
+=======
+  <component name="RunManager" selected="Python tests.Unittests in creatbook.py">
+>>>>>>> origin/master
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="bmapitest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,11 +120,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="Nosetests for clock.test_Hxl.test_add_type" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="Unittests for test_theme.Theme.test_theme_type" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> origin/master
       <module name="bmapitest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/clock" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -104,10 +141,24 @@
       <method v="2" />
     </configuration>
     <configuration name="Nosetests in clock.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx/shequ" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_theme.Theme.test_theme_type&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_topic.Topic.test_them_result" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> origin/master
       <module name="bmapitest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/clock" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -119,58 +170,118 @@
       <method v="2" />
     </configuration>
     <configuration name="Nosetests in test_mysql.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <module name="bmapitest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/mysql_case_demo" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx/shequ" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_topic.Topic.test_them_result&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_topic.Topic.test_topic" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> origin/master
+      <module name="bmapitest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/mysql_case_demo" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx/shequ" />
+>>>>>>> origin/master
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+<<<<<<< HEAD
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/mysql_case_demo/test_mysql.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Nosetests in test_yyx.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+=======
+      <option name="_new_target" value="&quot;test_topic.Topic.test_topic&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in creatbook.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> origin/master
       <module name="bmapitest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx/homebook" />
+>>>>>>> origin/master
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+<<<<<<< HEAD
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/yyx/test_yyx.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in clock_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+=======
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/yyx/homebook/creatbook.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_theme.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+>>>>>>> origin/master
       <module name="bmapitest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/clock" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/clock/clock_test.py&quot;" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/yyx/shequ" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/yyx/shequ/test_theme.py&quot;" />
+>>>>>>> origin/master
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python tests.Unittests in test_theme.py" />
+      <item itemvalue="Python tests.Unittests for test_theme.Theme.test_theme_type" />
+      <item itemvalue="Python tests.Unittests for test_topic.Topic.test_topic" />
+      <item itemvalue="Python tests.Unittests for test_topic.Topic.test_them_result" />
+      <item itemvalue="Python tests.Unittests in creatbook.py" />
+    </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python tests.Unittests in clock_test.py" />
         <item itemvalue="Python tests.Nosetests in clock.py" />
         <item itemvalue="Python tests.Nosetests for clock.test_Hxl.test_add_type" />
         <item itemvalue="Python tests.Nosetests in test_yyx.py" />
         <item itemvalue="Python tests.Nosetests in test_mysql.py" />
+=======
+        <item itemvalue="Python tests.Unittests in creatbook.py" />
+        <item itemvalue="Python tests.Unittests for test_topic.Topic.test_them_result" />
+        <item itemvalue="Python tests.Unittests for test_topic.Topic.test_topic" />
+        <item itemvalue="Python tests.Unittests for test_theme.Theme.test_theme_type" />
+        <item itemvalue="Python tests.Unittests in test_theme.py" />
+>>>>>>> origin/master
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +306,22 @@
       <workItem from="1590733034157" duration="601000" />
       <workItem from="1590818071178" duration="16760000" />
       <workItem from="1591080845683" duration="1302000" />
-      <workItem from="1591082816931" duration="7457000" />
+      <workItem from="1591082816931" duration="47362000" />
+      <workItem from="1591773233128" duration="49455000" />
+      <workItem from="1592115602213" duration="304000" />
+      <workItem from="1592116387459" duration="17566000" />
+      <workItem from="1592275032300" duration="10403000" />
+      <workItem from="1592375863213" duration="30787000" />
+      <workItem from="1592733793468" duration="16900000" />
+      <workItem from="1592791445394" duration="19253000" />
+      <workItem from="1593413848278" duration="966000" />
+      <workItem from="1593415312685" duration="621000" />
+      <workItem from="1593415950896" duration="104000" />
+      <workItem from="1593416086386" duration="1827000" />
+      <workItem from="1593417936456" duration="302000" />
+      <workItem from="1593418248006" duration="1500000" />
+      <workItem from="1593684796456" duration="1541000" />
+      <workItem from="1593762286247" duration="21555000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1589263141451</created>
@@ -246,6 +372,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="修改验证token是否有效的接口" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="668" y="148" key="#Nosetests_in_clock.py" timestamp="1591601511795">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -254,14 +381,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593421551777" />
+=======
+    <state x="340" y="0" key="#Nosetests_for_test_topic.Topic.test_topic" timestamp="1593231951425">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="340" y="0" key="#Nosetests_for_test_topic.Topic.test_topic/0.0.1280.680@0.0.1280.680" timestamp="1593231951425" />
+    <state x="2577" y="175" key="#Nosetests_for_test_yyx.test_Yyx.test_home_topic" timestamp="1593419537337">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2577" y="175" key="#Nosetests_for_test_yyx.test_Yyx.test_home_topic/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593419537337" />
+    <state x="2206" y="19" width="1089" height="667" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593762161382">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2206" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593762161382" />
+    <state x="191" y="13" width="1089" height="667" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1593233289484" />
+    <state x="378" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594034225231">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="378" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1594034225231" />
+    <state x="378" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1593231187592" />
+>>>>>>> origin/master
     <state x="2271" y="52" key="CommitChangelistDialog2" timestamp="1590390560923">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2271" y="52" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590390560923" />
     <state x="234" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590323653150" />
-    <state width="1278" height="55" key="DebuggerActiveHint" timestamp="1590832366562">
+    <state width="1278" height="127" key="DebuggerActiveHint" timestamp="1593239340270">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+<<<<<<< HEAD
     <state width="1278" height="55" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1590832366562" />
     <state x="632" y="145" key="FileChooserDialogImpl" timestamp="1592468173781">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -335,19 +483,101 @@
     <state x="2018" y="115" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590027825028" />
     <state x="66" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590829941449" />
     <state x="203" y="48" key="SettingsEditor/0.1080.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593419607744" />
+=======
+    <state width="1278" height="127" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1593239340270" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1592479157706">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592479157706" />
+    <state x="2672" y="132" key="EnvironmentVariablesDialog" timestamp="1593419525335">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2672" y="132" key="EnvironmentVariablesDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593419525335" />
+    <state x="501" y="86" key="EnvironmentVariablesDialog/0.0.1280.680@0.0.1280.680" timestamp="1592752773934" />
+    <state x="2552" y="145" key="FileChooserDialogImpl" timestamp="1593418783176">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1593417082204" />
+    <state x="2552" y="145" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593418783176" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593244540685" />
+    <state width="1237" height="402" key="GridCell.Tab.0.bottom" timestamp="1594037850085">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="402" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1594037850085" />
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593764515901" />
+    <state width="1237" height="212" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593244649904" />
+    <state width="1237" height="402" key="GridCell.Tab.0.center" timestamp="1594037850085">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="402" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1594037850085" />
+    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593764515900" />
+    <state width="1237" height="212" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1593244649904" />
+    <state width="1237" height="402" key="GridCell.Tab.0.left" timestamp="1594037850085">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="402" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1594037850085" />
+    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593764515900" />
+    <state width="1237" height="212" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1593244649904" />
+    <state width="1237" height="402" key="GridCell.Tab.0.right" timestamp="1594037850085">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="402" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1594037850085" />
+    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593764515901" />
+    <state width="1237" height="212" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1593244649904" />
+    <state width="1237" height="212" key="GridCell.Tab.1.bottom" timestamp="1593244649904">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="190" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591253635860" />
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592560451758" />
+    <state width="1237" height="212" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593244649904" />
+    <state width="1237" height="212" key="GridCell.Tab.1.center" timestamp="1593244649904">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="190" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591253635860" />
+    <state width="1877" height="361" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592560451758" />
+    <state width="1237" height="212" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1593244649904" />
+    <state width="1237" height="212" key="GridCell.Tab.1.left" timestamp="1593244649904">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="190" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591253635860" />
+    <state width="1877" height="361" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592560451758" />
+    <state width="1237" height="212" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1593244649904" />
+    <state width="1237" height="212" key="GridCell.Tab.1.right" timestamp="1593244649904">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="190" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591253635860" />
+    <state width="1877" height="361" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592560451758" />
+    <state width="1237" height="212" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1593244649904" />
+    <state x="2320" y="130" key="SettingsEditor" timestamp="1593762263012">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="66" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1593417307657" />
+    <state x="2320" y="130" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593762263012" />
+    <state x="66" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1593231463832" />
+>>>>>>> origin/master
     <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1590833500066">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590833500066" />
-    <state width="646" height="346" key="XDebugger.FullValuePopup" timestamp="1590826425189">
+    <state width="646" height="346" key="XDebugger.FullValuePopup" timestamp="1592125069808">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590659751589" />
-    <state width="646" height="346" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1590826425189" />
+    <state width="646" height="346" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1592125069808" />
+    <state x="2610" y="324" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1592478918891">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2610" y="324" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592478918891" />
+    <state x="61" y="60" width="1158" height="560" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592735156479">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591932101741" />
+    <state x="61" y="60" width="1158" height="560" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1592735156479" />
     <state x="2467" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590390566352">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2467" y="398" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590390566352" />
+<<<<<<< HEAD
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592387266244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -374,4 +604,64 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+=======
+    <state x="2252" y="0" width="1581" height="691" key="editAsTableFormatDialogDimension" timestamp="1592478840202">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="221" y="0" key="editAsTableFormatDialogDimension/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1591259361672" />
+    <state x="2252" y="0" width="1581" height="691" key="editAsTableFormatDialogDimension/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592478840202" />
+    <state x="98" y="76" width="605" height="536" key="find.popup" timestamp="1593239663048">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="98" y="76" width="605" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1593239663048" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1593415443713">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1593415443713" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591326936918" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1592745373725" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="self.exc_val" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_theme_Topic_test_theme.coverage" NAME="Nosetests for test_theme.Topic.test_theme Coverage Results" MODIFIED="1591869449416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_theme_Theme_test_theme.coverage" NAME="Nosetests for test_theme.Theme.test_theme Coverage Results" MODIFIED="1591869487903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_theme_Test_Topic_test_theme.coverage" NAME="Nosetests for test_theme.Test_Topic.test_theme Coverage Results" MODIFIED="1591869358306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_ceshi_yyx_ceshi_Yyx.coverage" NAME="Nosetests for ceshi_yyx.ceshi_Yyx Coverage Results" MODIFIED="1593232461132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_Topic_test_them_result.coverage" NAME="Nosetests for test_topic.Topic.test_them_result Coverage Results" MODIFIED="1593230016537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_test_Yyx_testhometopic.coverage" NAME="Nosetests for test_yyx.test_Yyx.testhometopic Coverage Results" MODIFIED="1593233486722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Unittests_for_test_topic_Topic_test_topic.coverage" NAME="Unittests for test_topic.Topic.test_topic Coverage Results" MODIFIED="1593763306327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_yyx_py.coverage" NAME="Nosetests in test_yyx.py Coverage Results" MODIFIED="1593762120170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Unittests_in_creatbook_py.coverage" NAME="Unittests in creatbook.py Coverage Results" MODIFIED="1594037850078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/homebook" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_Topic_test_topic.coverage" NAME="Nosetests for test_topic.Topic.test_topic Coverage Results" MODIFIED="1593239778066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_test_Topic.coverage" NAME="Nosetests for tests.yyx.shequ.test_topic.test_Topic Coverage Results" MODIFIED="1591250259906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_Topic.coverage" NAME="Nosetests in test_topic.py Coverage Results" MODIFIED="1592752659486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_ddt_csv_demo_MyCase_test_ddt_dict_demo.coverage" NAME="Nosetests for test_ddt_csv_demo.MyCase.test_ddt_dict_demo Coverage Results" MODIFIED="1593239138798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_test_Yyx_test_topic.coverage" NAME="Nosetests for test_topic.test_Yyx.test_topic Coverage Results" MODIFIED="1591249428046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_testyyx_snow_Yyx_testhometopic.coverage" NAME="Nosetests for testyyx.snow_Yyx.testhometopic Coverage Results" MODIFIED="1593232762426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Unittests_for_test_theme_Theme_test_theme_type.coverage" NAME="Unittests for test_theme.Theme.test_theme_type Coverage Results" MODIFIED="1593763291185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_topic_py.coverage" NAME="Nosetests in test_topic.py Coverage Results" MODIFIED="1592883785646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_test_Yyx_test1.coverage" NAME="Nosetests for test_yyx.test_Yyx.test1 Coverage Results" MODIFIED="1593233387128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$test.coverage" NAME="test Coverage Results" MODIFIED="1593244431299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/test" />
+    <SUITE FILE_PATH="coverage/bmapitest$Unittests_in_test_theme_py.coverage" NAME="Unittests in test_theme.py Coverage Results" MODIFIED="1593762293822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Unittests_for_test_topic_Topic_test_them_result.coverage" NAME="Unittests for test_topic.Topic.test_them_result Coverage Results" MODIFIED="1593764515889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_test_Yyx_testThird_01.coverage" NAME="Nosetests for test_yyx.test_Yyx.testThird_01 Coverage Results" MODIFIED="1593233437194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_testYyx_test1.coverage" NAME="Nosetests for test_yyx.testYyx.test1 Coverage Results" MODIFIED="1593233399643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_test_Topic_test_theme.coverage" NAME="Nosetests for test_topic.test_Topic.test_theme Coverage Results" MODIFIED="1591864872834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_mysql_py.coverage" NAME="Nosetests in test_mysql.py Coverage Results" MODIFIED="1591084520203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/mysql_case_demo" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_ceshi_yyx_ceshi_Yyx_testThird_01.coverage" NAME="Nosetests for ceshi_yyx.ceshi_Yyx.testThird_01 Coverage Results" MODIFIED="1593232495184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_in_test_theme_py.coverage" NAME="Nosetests in test_theme.py Coverage Results" MODIFIED="1592563174587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_mysql_MysqlCase_test_mysql_select.coverage" NAME="Nosetests for test_mysql.MysqlCase.test_mysql_select Coverage Results" MODIFIED="1590318819488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/mysql_case_demo" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_snow_Yyx_testhometopic.coverage" NAME="Nosetests for test_yyx.snow_Yyx.testhometopic Coverage Results" MODIFIED="1593232728155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_topic_test_Topic_test_topic.coverage" NAME="Nosetests for test_topic.test_Topic.test_topic Coverage Results" MODIFIED="1591794061946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx/shequ" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_mysql_MysqlCase.coverage" NAME="Nosetests for test_mysql.MysqlCase Coverage Results" MODIFIED="1589263263591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/mysql_case_demo" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_test_Yyx.coverage" NAME="Nosetests for test_yyx.test_Yyx Coverage Results" MODIFIED="1593239954523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+    <SUITE FILE_PATH="coverage/bmapitest$Nosetests_for_test_yyx_test_Yyx_test_home_topic.coverage" NAME="Nosetests for test_yyx.test_Yyx.test_home_topic Coverage Results" MODIFIED="1593418256450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/yyx" />
+  </component>
+>>>>>>> origin/master
 </project>
