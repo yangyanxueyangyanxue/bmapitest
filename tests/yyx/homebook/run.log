@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 20200707 18:03:21 [INFO] - [log.py] - logger init
 20200707 18:03:21 [DEBUG] - [user_factory.py] - C:\Users\Admin\Documents\bmapitest/user/yyx.json
 20200707 18:03:21 [DEBUG] - [req.py] - args:('POST', 'http://test.app.babamama.cn/api/v1/family/lists')

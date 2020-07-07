@@ -157,7 +157,11 @@ class Home_book(Interface):
 
              }
         return self.post(url, data=d, params=p)
+<<<<<<< HEAD
     def homebook_cateauth(self,familyId,id):
+=======
+    def homebook_cateauth(self,id):
+>>>>>>> ac10075b6bc59ace549b82b75a063da707e1fa1e
         """
 
         获取标签下级列表及标签权限接口（草稿箱列表打开后请求这个接口）
