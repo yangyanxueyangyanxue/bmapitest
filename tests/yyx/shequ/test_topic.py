@@ -90,7 +90,7 @@ class Topic(unittest.TestCase):
 
     # @unittest.skip
     @read_csv_dict("test_them_result.csv")
-    def test_them_result(caseId,requestUrl,method,params,resp,cost,message):
+    def test_them_result(self,caseId,requestUrl,method,params,resp,cost,message):
         Result=Result_sql()
         test_batch=Result.batch()
         batchId=test_batch.data.batchId
@@ -98,7 +98,7 @@ class Topic(unittest.TestCase):
         test_topic_result=Topic_result.test_topic()
         test_topic_result_code=test_topic_result.code
 
-        if test_topic_result ==200:
+        if test_topic_result_code ==200:
             result=0
         else:
             result=1

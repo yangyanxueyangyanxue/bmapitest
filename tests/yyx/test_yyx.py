@@ -15,10 +15,16 @@ InterfaceCenter.set_user_file(user_file)
 
 @ddt.ddt
 class test_Yyx(unittest.TestCase):
+<<<<<<< HEAD
+    #@unittest.skip
+    @read_csv_dict("body.csv")
+    def test_home_topic(self,uid,type):
+=======
     # @unittest.skip
     @read_csv_dict("test_body.csv")
     def test_home_topic(self, uid, type):
 
+>>>>>>> origin/master
         """
         校验home_topic接口是否请求成功，
         """
