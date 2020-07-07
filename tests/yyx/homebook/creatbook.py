@@ -54,18 +54,18 @@ class Creatbook(unittest.TestCase):
 
 
 
-            print('请求接口成功' ,homebook_home_data)
-            homebook_home_total1=homebook_home_data[0]['total'] #记录当前草稿箱得数量
-            #选择照片pic_list，选择得是家庭相册照片，没有用upload接口，这个接口是把手机照片传到服务器，转给对应得接口
-            pic_list=u.fm_pic_list(familyId)
-            pic_list_code=pic_list.code
-            if pic_list_code==200:
-                total=pic_list.data.total
-                if total!=0:
+                print('请求接口成功' ,homebook_home_data)
+                homebook_home_total1=homebook_home_data[0]['total'] #记录当前草稿箱得数量
+                #选择照片pic_list，选择得是家庭相册照片，没有用upload接口，这个接口是把手机照片传到服务器，转给对应得接口
+                pic_list=u.fm_pic_list(familyId)
+                pic_list_code=pic_list.code
+                if pic_list_code==200:
+                    total=pic_list.data.total
+                    if total!=0:
 
-                    img_url1=pic_list.data.list[0]['img_url']
-                    img_url2=pic_list.data.list[1]['img_url']
-                    print(img_url1, img_url2)
+                        img_url1=pic_list.data.list[0]['img_url']
+                        img_url2=pic_list.data.list[1]['img_url']
+                        print(img_url1, img_url2)
 
 
             #选择纪念册类型，然后返回二级或者三级标签得值 cate_auth
