@@ -23,7 +23,7 @@ def __get_data_from_csv(file_path, read_type):
             for row in f_csv:
                 val_rows.append(row)
     except FileNotFoundError:
-        print("your csv file not found,my sister!please check your file path")
+        print("your csv file not found,my sister!please clock your file path")
     return val_rows
 
 
