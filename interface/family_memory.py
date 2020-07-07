@@ -25,6 +25,11 @@ class Family_memory(Interface):
         self.set_data(data)
 
     def fm_pic_list(self,familyId,page=1):
+        """
+
+        获取家庭下所有照片接口
+        家书列表页面打开创建接口，首先请求这个，家书下增加照片请求这个接口
+        """
         url="/api/v3/family-memory/pic-list"
         p = {
             "token": self.token,
