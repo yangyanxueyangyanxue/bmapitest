@@ -90,7 +90,7 @@ class UserFactory(object):
                 logger.error("get user failed: %s" % err)
                 raise Exception(err)
             # u = cls.get_user_from_login(name)
-        # except Exception as err:
+             # except Exception as err:
         #     logger.error("get user failed: %s" % err)
         #     raise Exception(err)
         return u

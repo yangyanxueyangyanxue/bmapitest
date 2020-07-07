@@ -16,7 +16,6 @@ class test_Yyx(unittest.TestCase):
     #@unittest.skip
     @read_csv_dict("body.csv")
     def test_home_topic(self,uid,type):
-
         """
         校验home_topic接口是否请求成功，
         """
