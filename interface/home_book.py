@@ -5,6 +5,7 @@ import requests
 from common.configure import CONFIG
 from interface.inner import  Interface
 from common.req import Req
+import json
 #纪念册
 class Home_book(Interface):
 
@@ -67,33 +68,52 @@ class Home_book(Interface):
 
              }
         return self.post(url, data=d, params=p)
-    def homebook_save(self,id,familyId,coverId,title,first,draftId,list):
+    def homebook_save(self,familyId,coverId,title,first,draftId,sort,picId,imgUrl,type,
+                      id=None,second=None,occurTime="",occurLocation="",content="",
+                       cateId="",cateName="",videoUrl=""):
         """
         发布家书接口
         id	否	int	家书id（有家书id的话就是修改）
         familyId	是	int	家庭id
         coverId	是	int	封面id
         title	是	string	标题
-        first
-        是	int	一级标签id
-        second
-        否	int	二级标签id
+        first  是	int	一级标签id
+        second 否	int	二级标签id
         draftId	是	int	草稿箱id
         occurTime	否	int	发生时间
         occurLocation	否	string	发生地点
         list	是	string	小节
         """
         url = "/api/v3/homebook/save"
+        list_params = [{
+
+
+            "cateId": cateId,
+            "content": content,
+            "sort": sort,
+
+            "cateName": cateName,
+            "picId":picId,
+            "imgUrl": imgUrl,
+            "videoUrl": videoUrl,
+
+            "type": type,
+
+        }]
         p = {
             "token": self.token,
             "uid": self.uid
         }
         d = {"familyId": familyId,
+             "id":id,
              "coverId": coverId,
              "title": title,
              "first":first,
              "draftId":draftId,
-             "list":list
+             "list":json.dumps(list_params),
+             "second": second,
+             "occurTime": occurTime,
+             "occurLocation": occurLocation
 
              }
         return self.post(url, data=d, params=p)
@@ -112,34 +132,70 @@ class Home_book(Interface):
              }
         return self.post(url, data=d, params=p)
 
-    def homebook_savedraft(self, id, familyId, coverId, title, first, draftId, list):
+    def homebook_savedraft(self,familyId,picId,content,sort,type,cateName,
+                           cateId,picType,unique,first,
+                           id=None,contentId=None,cover="",coverType=None,title="",
+                           imgUrl="",videoUrl="",
+                           second="",occurTime="",occurLocation="",):
         """
         保存草稿箱接口，打开创建先请求一次，每隔30s自动请求一次
-        id	否	int	家书id（有家书id的话就是修改）
+        id	否	int	草稿箱id
+        contentId	否	int	家书id
         familyId	是	int	家庭id
-        coverId	是	int	封面id
-        title	是	string	标题
+        cover	否	string	封面id或者封面本地地址
+        coverType	否	int	1oss 2本地
+        title	否	string	标题
+        list	是	string
+        [{}]
+        [
+            "picId" => 1, // 图片视频id
+         "content" => 1, // 小节描述
+         "cateId" => 1, // 标签id
+         "sort" => 1, // 排序
+         "type" => 1, // 1图片 2视频
+         "cateName" => "测试", // 标签名称
+         "imgUrl" => "", // 图片url
+         "videoUrl" => "", // 视频url
+         "picType" => 1, // 1网络 2本地
+         "unique" => "123", // 小节唯一码
+        ]
+        occurTime	否	int	发生时间
+        occurLocation	否	string	发生地点
         first
         是	int	一级标签id
         second
-        否	int	二级标签id
-        draftId	是	int	草稿箱id
-        occurTime	否	int	发生时间
-        occurLocation	否	string	发生地点
-        list	是	string	小节
+        否	int	二级标签
         """
+        list_params=[{
+            "picId": picId,
+            "content": content,
+            "cateId": cateId,
+            "sort": sort,
+            "type": type,
+            "cateName": cateName,
+            "imgUrl": imgUrl,
+            "videoUrl": videoUrl,
+            "picType": picType,
+            "unique": unique,
+        }]
+        #这里只是实现了，传一张网络图片信息,思路：写一遍  然后循环放到一个新的数组里 需要几组循环几次
         url = "/api/v3/homebook/save-draft"
         p = {
             "token": self.token,
             "uid": self.uid
         }
         d = {"familyId": familyId,
-             "coverId": coverId,
-             "title": title,
-             "first": first,
-             "draftId": draftId,
-             "list": list
+             "id":id,
+             "contentId":contentId,
+             "cover":cover,
+             "coverType":coverType,
+             "title":title,
+             "second":second,
+             "occurTime":occurTime,
+             "occurLocation":occurLocation,
 
+             "list": json.dumps(list_params),
+             "first": first,
              }
         return self.post(url, data=d, params=p)
     def homebook_query(self,id,familyId):
@@ -157,11 +213,11 @@ class Home_book(Interface):
 
              }
         return self.post(url, data=d, params=p)
-<<<<<<< HEAD
+
     def homebook_cateauth(self,familyId,id):
-=======
-    def homebook_cateauth(self,id):
->>>>>>> ac10075b6bc59ace549b82b75a063da707e1fa1e
+
+
+
         """
 
         获取标签下级列表及标签权限接口（草稿箱列表打开后请求这个接口）
