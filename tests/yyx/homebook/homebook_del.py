@@ -11,7 +11,7 @@ from model.factory import InterfaceCenter
 
 user_file = 'yyx.json'
 InterfaceCenter.set_user_file(user_file)
-# 删除家书的草稿箱，已经发布的家书
+# 删除家书的草稿箱
 
 @ddt.ddt
 class homebokk_del(unittest.TestCase):

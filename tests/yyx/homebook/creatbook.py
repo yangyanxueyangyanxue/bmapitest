@@ -132,7 +132,30 @@ class Creatbook(unittest.TestCase):
                                             if first == item['id']:
                                                 total2 = int(item['total'])
                                                 self.assertEqual(( total2-1), int(total1))
-                                            print("创建家书ok")
+                                        print("创建家书ok")
+                                        id=save_data_id
+                                        #删除数据
+                                        homebook_del=u.homebook_del(id)
+                                        homebook_del_code=homebook_del.code
+                                        if homebook_del_code==200:
+                                            homebook_home2 = u.homebook_home(familyId)
+
+                                            homebook_home_code2 = homebook_home2.code
+                                            homebook_home_data2 = homebook_home2.data
+
+                                            if homebook_home_code1 == 200:
+                                                for i, item in enumerate(homebook_home_data2):
+                                                    if first == item['id']:
+                                                        total3 = int(item['total'])
+                                                        self.assertEqual(total3, int(total1))
+                                                print("删除家书成功")
+                                        else:
+                                            print("homebook_del_code",homebook_del_code)
+
+
+
+
+
                                     else:
                                         print('homebook_home_code1',homebook_home_code1)
                                 else:
