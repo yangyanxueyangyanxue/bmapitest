@@ -215,11 +215,13 @@ class Home_book(Interface):
         return self.post(url, data=d, params=p)
 
     def homebook_cateauth(self,familyId,id):
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> 592dd35a20961bdea9fa7a98fde68dc00aaabb01
         """
-
         获取标签下级列表及标签权限接口（草稿箱列表打开后请求这个接口）
         编辑草稿箱需求请求这个获取标签，一级，二级 首页选择编辑，选择好家书类型，接着请求二级标签
         id	是	int	标签id
