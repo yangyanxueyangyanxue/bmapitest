@@ -157,13 +157,9 @@ class Home_book(Interface):
 
              }
         return self.post(url, data=d, params=p)
-<<<<<<< HEAD
-    def homebook_cateauth(self,familyId,id):
-=======
-    def homebook_cateauth(self,id):
->>>>>>> ac10075b6bc59ace549b82b75a063da707e1fa1e
-        """
 
+    def homebook_cateauth(self,familyId,id):
+        """
         获取标签下级列表及标签权限接口（草稿箱列表打开后请求这个接口）
         编辑草稿箱需求请求这个获取标签，一级，二级 首页选择编辑，选择好家书类型，接着请求二级标签
         id	是	int	标签id

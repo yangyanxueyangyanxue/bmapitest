@@ -17,18 +17,39 @@ class Clock(Interface):
         self.token = token
         data = {
             'token': token,
-            'uid': uid,
+            'uid': uid
         }
         self.set_data(data)
 
-    def add_type(self, typeName):
+    def clock_add_type(self,typeName):
         # 添加打卡类型接口
         url = "/api/v1/clock-in/add-type"
         p = {
             "token": self.token,
             "uid": self.uid
         }
-        d = {'typeName': typeName}
+        d = {
+            'typeName': typeName,
+
+        }
+        return self.post(url, data=d, params=p)
+
+
+
+    def family_users(self,familyId):
+        # 获取家庭成员列表
+        url = "/api/v1/clock-in/family-users"
+        p = {"token": self.token,
+            "uid": self.uid,
+
+        }
+        d = {"token": self.token,
+            "uid": self.uid,
+            "familyId": familyId,
+
+
+
+             }
         return self.post(url, data=d, params=p)
 
 
@@ -49,12 +70,29 @@ class Clock(Interface):
         }
         return self.post(url,data=d,params=p)
 
+    def list(self, familyId):
+        # 打卡列表接口
+        url = "/api/v1/clock-in/list"
+        p = {
+            "token": self.token,
+            "uid": self.uid
+        }
+        d = {"familyId": familyId}
+        return self.post(url,data=d,params=p)
+
+
+
+
+
     def clock_in(self, eventId):
         # 立即打卡接口
         url = "/api/v1/clock-in/clock-in"
         p = {
             "token": self.token,
             "uid": self.uid
+
         }
-        d = {"eventId": eventId}
+        d = {"eventId": eventId
+
+             }
         return self.post(url,data=d,params=p)

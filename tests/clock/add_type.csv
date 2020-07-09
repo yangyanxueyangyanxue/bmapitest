@@ -1,5 +1,5 @@
-uid,typeName,familyId,rewardContent,rewardType,successCount,executorUid
-10213,'英语口语练习07070',"1183",去旅游,2,1,10250
+uid,familyId,rewardContent,rewardType,successCount
+10213,"1183",去旅游,2,1
 
 
 
