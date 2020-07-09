@@ -64,3 +64,25 @@ class Family_memory(Interface):
              "cateId": cateId,
              }
         return self.post(url, data=d, params=p)
+
+    def fm_family_list(self, familyId, type, userId,page):
+        """
+        相册首页接口
+        :param familyId: int,家庭id
+        :param type:int	维度 1时间 2主题
+        :param userId:int	查找用户id
+        :param page:int	页数
+        :return:
+        """
+
+        url = "/api/v3/family-memory/family-list"
+        p = {
+            "token": self.token,
+            "uid": self.uid
+        }
+        d = {"familyId": familyId,
+             "type": type,
+             "userId": userId,
+             "page": page,
+             }
+        return self.post(url, data=d, params=p)
