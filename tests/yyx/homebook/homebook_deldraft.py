@@ -14,10 +14,10 @@ InterfaceCenter.set_user_file(user_file)
 # 删除家书的草稿箱
 
 @ddt.ddt
-class homebokk_del(unittest.TestCase):
+class homebokk_deldraft(unittest.TestCase):
     # @unittest.skip
     @read_csv_dict("homebooklist.csv")
-    def test_homebookdel(self,uid,familyId,):
+    def test_homebookdeldraft(self,uid,familyId,):
 
         """
         删除草稿箱接口

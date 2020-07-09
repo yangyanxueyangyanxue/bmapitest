@@ -55,7 +55,7 @@ class Creatbook(unittest.TestCase):
                     idlist2.append(item['id'])
                 print(idlist2,'idlist2')
                 second = random.choice(idlist2)  # 随机取一个二级标签
-                occurTime=a=int(time.time())
+                occurTime=int(time.time())
 
                 print('请求接口成功' ,homebook_home_data)
                 homebook_home_total1=homebook_home_data[0]['total'] #记录当前草稿箱得数量
