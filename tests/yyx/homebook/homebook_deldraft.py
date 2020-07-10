@@ -61,3 +61,5 @@ class homebokk_deldraft(unittest.TestCase):
                         self.assertEqual(int(homecate_total), homecate_total3 )
                         print("1111",homecate_total3)
 
+if __name__ == '__main__':
+    unittest.main()

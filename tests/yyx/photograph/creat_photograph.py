@@ -2,6 +2,7 @@ import ddt
 import unittest
 import time
 import random
+from common.urlToBase64 import Urltobase64
 from common.ddt_csv_reader import read_csv_dict
 import json
 from interface.contents import Content
@@ -50,6 +51,7 @@ class Creatbook(unittest.TestCase):
             if total != 0:
                 pic_id1 = pic_list.data.list[0]['pic_id']
                 pic_id2=pic_list.data.list[1]['pic_id']
+                img_url=pic_list.data.list[0]['img_url']
                 pic1.append(int(pic_id1))
                 pic1.append(id)
                 pic2.append(int(pic_id2))
@@ -64,6 +66,17 @@ class Creatbook(unittest.TestCase):
                 print(photograph_save_id)
                 photograph_effect=u.photograph_effect()
             else:
+                #上传封面 图片转base64
+                photoGraphId=10946
+                extend='jpg'
+                url=img_url
+
+                imgdata=Urltobase64(url)
+
+
+                uploadbase64=u.service_tools_uploadbase64(photoGraphId,extend,imgdata)
+
+
                 photograph_effect = u.memory_album_list(familyId)
 
 
@@ -72,5 +85,7 @@ class Creatbook(unittest.TestCase):
 
 
 
+if __name__ == '__main__':
+    unittest.main()
 
 
