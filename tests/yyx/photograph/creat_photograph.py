@@ -2,6 +2,8 @@ import ddt
 import unittest
 import time
 import random
+import string
+from numpy import *
 from common.urlToBase64 import Urltobase64
 from common.ddt_csv_reader import read_csv_dict
 import json
@@ -40,26 +42,25 @@ class Creatbook(unittest.TestCase):
                 title=template.data[0]['title']
         familyIds=[]
         familyIds.append(int(familyId))
-        print(familyIds)
-        pic_list = u.fm_pic_list(familyId)
-        pic_list_code=pic_list.code
-        pic1=[]
-        pic2=[]
+        #print(familyIds)
+        pic_list_data = u.fm_pic_list(familyId)
+        pic_list_code=pic_list_data.code
+        pic_list=[]
+
         id=1 #网络图片
         if pic_list_code == 200:
-            total = pic_list.data.total
+            total = pic_list_data.data.total
             if total != 0:
-                pic_id1 = pic_list.data.list[0]['pic_id']
-                pic_id2=pic_list.data.list[1]['pic_id']
-                img_url=pic_list.data.list[0]['img_url']
-                pic1.append(int(pic_id1))
-                pic1.append(id)
-                pic2.append(int(pic_id2))
-                pic2.append(id)
-            pics=[pic1,pic2]
+                pic_data_list = pic_list_data.data.list
+                for i ,item in  enumerate(pic_data_list):
 
-            print(pics)
-            photograph_save=u.photograph_save(familyIds,title,templateId,id)
+                    pic_list.append(item['pic_id'])
+
+                print(pic_list)
+            random_pic=random.choice(pic_list)
+
+
+            photograph_save=u.photograph_save(familyIds,title,templateId,pic_list)
             photograph_save_code=photograph_save.code
             if photograph_save_code==200:
                 photograph_save_id=photograph_save.data.id

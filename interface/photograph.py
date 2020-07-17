@@ -6,6 +6,7 @@ from common.configure import CONFIG
 from interface.inner import  Interface
 from common.req import Req
 import json
+from numpy import *
 #影集
 class Photograph(Interface):
 
@@ -67,7 +68,7 @@ class Photograph(Interface):
         }
         return self.post(url, data=d, params=p)
 
-    def photograph_save(self,familyIds,title,templateId,pics):
+    def photograph_save(self,familyIds,title,templateId,pic_list):
         """
         发布影集
         familyIds	是	array	分享到的家庭id数组
@@ -88,19 +89,33 @@ class Photograph(Interface):
         templateId	是	int	模板id
 
         """
-        url = "/api/v3/photograph/save"
+        interface = "/api/v3/photograph/save"
+
 
         p = {
             "token": self.token,
             "uid": self.uid
         }
-        d = {"familyIds":familyIds,
-             "pics[35088][1]":pics,
-             "title": title,
-             "templateId": templateId,
 
-        }
-        return self.post(url, data=d, params=p)
+        keys = ['familyIds[]', 'title', 'templateId'];
+        values = [familyIds, title, templateId];
+        pics = array([(pic_list[0:3])])
+        for x, item in enumerate(pics):
+            a=len(pics[0])-1
+            print(a,1)
+            for i in range(a):
+                #print(pics[x][i])
+                keys.append('pics[' + str(x) + ']'+'['+str(i)+']');
+                values.append(pics[x][i]); # 是下标得第一个第一个
+                values.append(1);
+            print('value',values)
+            print('keys',keys)
+
+        dictionary = dict(zip(keys, values))
+
+        print(dictionary)
+        r = self.post(interface, params=p, data=dictionary)
+        return r
 
     def photograph_content(self,home_id,content_id):
         """

@@ -1,7 +1,7 @@
 MYSQL_ALL_DB={
     "bbmmapptest":{
         "database":"bbmmapptest",
-        "host":"172.17.47.39",
+        "host":"47.95.12.94",
         "user":"root",
         "password":"NDkzNzliZTZhMTB",
 
