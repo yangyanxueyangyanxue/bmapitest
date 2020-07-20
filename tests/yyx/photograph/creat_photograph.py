@@ -46,6 +46,7 @@ class Creatbook(unittest.TestCase):
         pic_list_data = u.fm_pic_list(familyId)
         pic_list_code=pic_list_data.code
         pic_list=[]
+        img_urllist=[]
 
         id=1 #网络图片
         if pic_list_code == 200:
@@ -55,9 +56,9 @@ class Creatbook(unittest.TestCase):
                 for i ,item in  enumerate(pic_data_list):
 
                     pic_list.append(item['pic_id'])
-
-                print(pic_list)
-            random_pic=random.choice(pic_list)
+                    img_urllist.append(item['img_url'])
+                #print(pic_list)
+            url=random.choice(img_urllist)
 
 
             photograph_save=u.photograph_save(familyIds,title,templateId,pic_list)
@@ -65,12 +66,11 @@ class Creatbook(unittest.TestCase):
             if photograph_save_code==200:
                 photograph_save_id=photograph_save.data.id
                 print(photograph_save_id)
-                photograph_effect=u.photograph_effect()
-            else:
+
                 #上传封面 图片转base64
                 photoGraphId=10946
                 extend='jpg'
-                url=img_url
+
 
                 imgdata=Urltobase64(url)
 
@@ -78,7 +78,17 @@ class Creatbook(unittest.TestCase):
                 uploadbase64=u.service_tools_uploadbase64(photoGraphId,extend,imgdata)
 
 
-                photograph_effect = u.memory_album_list(familyId)
+                memory_album_list = u.memory_album_list(familyId)
+                memory_album_list_code=memory_album_list.code
+                if memory_album_list_code==200:
+                    album_list_data=memory_album_list.data
+                    if album_list_data != None:
+
+                        for i ,item in enumerate(album_list_data[0]):
+                            if photograph_save_id==int(item[id]):
+                                print("创建影集成功，并且影集列表增加数据成功")
+
+
 
 
 
