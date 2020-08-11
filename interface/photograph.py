@@ -68,7 +68,7 @@ class Photograph(Interface):
         }
         return self.post(url, data=d, params=p)
 
-    def photograph_save(self,familyIds,title,templateId,pic_list):
+    def photograph_save(self,familyIds,title,templateId,pic_list,coverId,musicId=None):
         """
         发布影集
         familyIds	是	array	分享到的家庭id数组
@@ -97,8 +97,8 @@ class Photograph(Interface):
             "uid": self.uid
         }
 
-        keys = ['familyIds[]', 'title', 'templateId'];
-        values = [familyIds, title, templateId];
+        keys = ['familyIds[]', 'title', 'templateId','coverId','musicId'];
+        values = [familyIds, title, templateId,coverId,musicId];
         pics = array([(pic_list[0:3])])
         for x, item in enumerate(pics):
             a=len(pics[0])-1
@@ -115,6 +115,7 @@ class Photograph(Interface):
 
         print(dictionary)
         r = self.post(interface, params=p, data=dictionary)
+
         return r
 
     def photograph_content(self,home_id,content_id):
